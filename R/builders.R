@@ -766,7 +766,7 @@
 }
 
 .getBoundaries <- function(city, border, zoom = NULL, input = NULL) {
-  defaultRadius <- 0.1
+  defaultRadius <- 0.05
   if (!is.null(zoom)) {
     radius <- geosphere::distm(x = c(city[["long"]], city[["lat"]]), y = c(city[["long"]], city[["lat"]] + defaultRadius * (1 / zoom)), fun = geosphere::distHaversine)
   } else {
