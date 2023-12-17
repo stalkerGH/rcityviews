@@ -226,7 +226,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
 #   # Water ######################################################################
-  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"river\"")
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"")
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     fill = themeOptions[["colors"]][["water"]],
