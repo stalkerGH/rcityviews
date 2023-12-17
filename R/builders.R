@@ -257,8 +257,8 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"dock\"")
-  i  print("WATERWAY = DOCK)
-  nt_p <- int_p + ggplot2::geom_sf(
+  print("WATERWAY = DOCK")
+  int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = themeOptions[["colors"]][["water"]],
     color = themeOptions[["colors"]][["waterlines"]],
