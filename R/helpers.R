@@ -185,7 +185,18 @@
       "text" = "#ffffff",
       "waterlines" = "#a3bff4",
       "textshadow" = "#e282af"
-    )
+    ),
+    "bw" = list(
+      "background" = "#232323",
+      "water" = "#cde6ff",
+      "landuse" = NA,
+      "contours" = NA,
+      "streets" = "#808080",
+      "rails" = c("#808080", "#232323"),
+      "buildings" = NA,
+      "text" = "#ffffff",
+      "waterlines" = "#ffffff"
+    ),
   )
   font <- switch(theme,
     "vintage" = list(
