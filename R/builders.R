@@ -223,8 +223,8 @@
     inherit.aes = FALSE
   )
   .tick(verbose, progBar, ticks, shiny)
-  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"leisure\"=\"garden\"")
     print("GARDEN")
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"leisure\"=\"garden\"")
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -234,8 +234,8 @@
   )
   .tick(verbose, progBar, ticks, shiny)
 #   # Water ######################################################################
-  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"river\"")
     print("WATERWAY = RIVER")
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"river\"")
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     fill = themeOptions[["colors"]][["water"]],
