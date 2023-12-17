@@ -187,7 +187,7 @@ cityview <- function(name = NULL,
                      zoom = 1,
                      theme = c(
                        "vintage", "modern", "bright", "delftware", "comic",
-                       "rouge", "original", "midearth", "batik", "vice"
+                       "rouge", "original", "midearth", "batik", "vice", "bw"
                      ),
                      border = c(
                        "none", "circle", "rhombus", "square",
@@ -197,7 +197,7 @@ cityview <- function(name = NULL,
                      legend = FALSE,
                      places = 0,
                      license = FALSE,
-                     timeout = 25,
+                     timeout = 60,
                      filename = NULL,
                      verbose = TRUE,
                      bot = FALSE) {
