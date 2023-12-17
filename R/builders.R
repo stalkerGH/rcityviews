@@ -63,7 +63,7 @@
     }
   }
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
-  print(features)
+  print("natural = coastline")
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = themeOptions[["colors"]][["background"]],
@@ -74,7 +74,7 @@
   .tick(verbose, progBar, ticks, shiny)
   # Landuse ####################################################################
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"leisure\"=\"park\"")
-  print(features)
+  print("leisure = park")
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
