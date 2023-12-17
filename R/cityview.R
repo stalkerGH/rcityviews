@@ -196,7 +196,7 @@ cityview <- function(name = NULL,
                      halftone = NULL,
                      legend = FALSE,
                      places = 0,
-                     license = TRUE,
+                     license = FALSE,
                      timeout = 25,
                      filename = NULL,
                      verbose = TRUE,
@@ -224,7 +224,8 @@ cityview <- function(name = NULL,
     return(invisible())
   }
   if (bot) {
-    cat(paste0(city[["name"]], ", ", city[["country"]]))
+#     cat(paste0(city[["name"]], ", ", city[["country"]]))
+    return(invisible())
   }
   # Create the bounding box ####################################################
   boundaries <- .getBoundaries(city = city, border = border, zoom = zoom)
@@ -268,10 +269,10 @@ cityview <- function(name = NULL,
     ggplot2::ggsave(
       filename = filename,
       plot = image,
-      height = 500,
-      width = 500,
+      height = 600,
+      width = 600,
       units = "mm",
-      dpi = 100
+      dpi = 300
     )
     return(invisible())
   }
