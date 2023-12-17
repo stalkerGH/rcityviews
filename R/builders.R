@@ -63,7 +63,7 @@
     }
   }
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
-  print("\"natural\"=\"coastline\"")
+  print(COASTLINE)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = themeOptions[["colors"]][["background"]],
@@ -74,6 +74,7 @@
   .tick(verbose, progBar, ticks, shiny)
   # Landuse ####################################################################
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"leisure\"=\"park\"")
+  print(PARK)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -83,6 +84,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"landuse\"=\"forest\"")
+  print(FOREST)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -92,6 +94,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"wood\"")
+  print(WOOD)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -101,6 +104,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"landuse\"=\"grass\"")
+  print(GRASS)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -110,6 +114,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"scrub\"")
+    print(SCRUB)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -119,6 +124,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"mud\"")
+    print(MUD)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -128,6 +134,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"beach\"")
+    print(BEACH)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -137,6 +144,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"landuse\"=\"meadow\"")
+    print(MEADOW)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -146,15 +154,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"landuse\"=\"farmland\"")
-  int_p <- int_p + ggplot2::geom_sf(
-    data = obj[["polygons"]],
-    fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
-    color = themeOptions[["colors"]][["contours"]],
-    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-    inherit.aes = FALSE
-  )
-  .tick(verbose, progBar, ticks, shiny)
-  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"wood\"")
+    print(FARMLAND)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -164,6 +164,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"landuse\"=\"cemetery\"")
+    print(CEMETERY)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -173,6 +174,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"landuse\"=\"construction\"")
+    print(CONSTRUCTION)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -182,6 +184,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"amenity\"=\"parking\"")
+    print(PARKING)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -191,6 +194,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"leisure\"=\"playground\"")
+    print(PLAYGROUND)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -200,6 +204,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"leisure\"=\"pitch\"")
+    print(PITCH)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -209,6 +214,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"leisure\"=\"dog_park\"")
+    print(DOG_PARK)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -218,6 +224,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"leisure\"=\"garden\"")
+    print(GARDEN)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
@@ -227,7 +234,8 @@
   )
   .tick(verbose, progBar, ticks, shiny)
 #   # Water ######################################################################
-  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"")
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"river\"")
+    print(WATERWAY = RIVER)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     fill = themeOptions[["colors"]][["water"]],
@@ -236,37 +244,41 @@
     lineend = "round",
     inherit.aes = FALSE
   )
-#   .tick(verbose, progBar, ticks, shiny)
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"canal\"")
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["lines"]],
-#     fill = themeOptions[["colors"]][["water"]],
-#     color = themeOptions[["colors"]][["waterlines"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["canal"]],
-#     lineend = "round",
-#     inherit.aes = FALSE
-#   )
-#   .tick(verbose, progBar, ticks, shiny)
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"dock\"")
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["polygons"]],
-#     fill = themeOptions[["colors"]][["water"]],
-#     color = themeOptions[["colors"]][["waterlines"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-#     inherit.aes = FALSE
-#   )
-#   .tick(verbose, progBar, ticks, shiny)
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"water\"")
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["polygons"]],
-#     fill = themeOptions[["colors"]][["water"]],
-#     color = themeOptions[["colors"]][["waterlines"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-#     inherit.aes = FALSE
-#   )
-#   .tick(verbose, progBar, ticks, shiny)
+  .tick(verbose, progBar, ticks, shiny)
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"canal\"")
+    print(WATERWAY = CANAL)
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["lines"]],
+    fill = themeOptions[["colors"]][["water"]],
+    color = themeOptions[["colors"]][["waterlines"]],
+    linewidth = themeOptions[["size"]][["borders"]][["canal"]],
+    lineend = "round",
+    inherit.aes = FALSE
+  )
+  .tick(verbose, progBar, ticks, shiny)
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"dock\"")
+  i  print(WATERWAY = DOCK)
+  nt_p <- int_p + ggplot2::geom_sf(
+    data = obj[["polygons"]],
+    fill = themeOptions[["colors"]][["water"]],
+    color = themeOptions[["colors"]][["waterlines"]],
+    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+    inherit.aes = FALSE
+  )
+  .tick(verbose, progBar, ticks, shiny)
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"water\"")
+    print(NATURAL = WATER)
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["polygons"]],
+    fill = themeOptions[["colors"]][["water"]],
+    color = themeOptions[["colors"]][["waterlines"]],
+    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+    inherit.aes = FALSE
+  )
+  .tick(verbose, progBar, ticks, shiny)
   # Islands ####################################################################
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"wetland\"")
+    print(NATURAL = WETLAND)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = themeOptions[["colors"]][["background"]],
@@ -276,6 +288,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"place\"=\"islet\"")
+    print(ISLET)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = themeOptions[["colors"]][["background"]],
@@ -285,6 +298,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"man_made\"=\"pier\"")
+    print(PIER)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["contours"]],
@@ -294,63 +308,70 @@
   )
   .tick(verbose, progBar, ticks, shiny)
 #   # Water lines ################################################################
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"riverbank\"")
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["lines"]],
-#     color = themeOptions[["colors"]][["water"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["water"]],
-#     lineend = "round",
-#     inherit.aes = FALSE
-#   )
-#   .tick(verbose, progBar, ticks, shiny)
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"stream\"")
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["lines"]],
-#     color = themeOptions[["colors"]][["water"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["water"]],
-#     lineend = "round",
-#     inherit.aes = FALSE
-#   )
-#   .tick(verbose, progBar, ticks, shiny)
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"ditch\"")
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["lines"]],
-#     color = themeOptions[["colors"]][["water"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["water"]],
-#     lineend = "round",
-#     inherit.aes = FALSE
-#   )
-#   .tick(verbose, progBar, ticks, shiny)
-#   # Landuse lines ##############################################################
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["lines"]],
-#     color = themeOptions[["colors"]][["contours"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-#     lineend = "round",
-#     inherit.aes = FALSE
-#   )
-#   .tick(verbose, progBar, ticks, shiny)
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"peninsula\"")
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["lines"]],
-#     color = themeOptions[["colors"]][["contours"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-#     lineend = "round",
-#     inherit.aes = FALSE
-#   )
-#   .tick(verbose, progBar, ticks, shiny)
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"place\"=\"archipelago\"")
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["lines"]],
-#     color = themeOptions[["colors"]][["contours"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-#     lineend = "round",
-#     inherit.aes = FALSE
-#   )
-#   .tick(verbose, progBar, ticks, shiny)
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"riverbank\"")
+    print(WATERWAY = RIVERBANK)
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["lines"]],
+    color = themeOptions[["colors"]][["water"]],
+    linewidth = themeOptions[["size"]][["borders"]][["water"]],
+    lineend = "round",
+    inherit.aes = FALSE
+  )
+  .tick(verbose, progBar, ticks, shiny)
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"stream\"")
+    print(WATERWAY = STREAM)
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["lines"]],
+    color = themeOptions[["colors"]][["water"]],
+    linewidth = themeOptions[["size"]][["borders"]][["water"]],
+    lineend = "round",
+    inherit.aes = FALSE
+  )
+  .tick(verbose, progBar, ticks, shiny)
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"ditch\"")
+    print(WATERWAY = DITCH)
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["lines"]],
+    color = themeOptions[["colors"]][["water"]],
+    linewidth = themeOptions[["size"]][["borders"]][["water"]],
+    lineend = "round",
+    inherit.aes = FALSE
+  )
+  .tick(verbose, progBar, ticks, shiny)
+  # Landuse lines ##############################################################
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
+    print(COASTLINE)
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["lines"]],
+    color = themeOptions[["colors"]][["contours"]],
+    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+    lineend = "round",
+    inherit.aes = FALSE
+  )
+  .tick(verbose, progBar, ticks, shiny)
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"peninsula\"")
+    print(PENINSULA)
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["lines"]],
+    color = themeOptions[["colors"]][["contours"]],
+    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+    lineend = "round",
+    inherit.aes = FALSE
+  )
+  .tick(verbose, progBar, ticks, shiny)
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"place\"=\"archipelago\"")
+    print(ARCHIPELAGO)
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["lines"]],
+    color = themeOptions[["colors"]][["contours"]],
+    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+    lineend = "round",
+    inherit.aes = FALSE
+  )
+  .tick(verbose, progBar, ticks, shiny)
   # Airports ###################################################################
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"aeroway\"=\"taxiway\"")
+    print(TAXIWAY)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["contours"]],
@@ -359,6 +380,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"aeroway\"=\"runway\"")
+    print(RUNWAY)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["contours"]],
@@ -367,6 +389,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"railway\"=\"rail\"")
+    print(RAIL)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["rails"]][1],
@@ -383,6 +406,7 @@
   .tick(verbose, progBar, ticks, shiny)
   # Small streets ##############################################################
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"dam\"")
+    print(DAM)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["streets"]],
@@ -391,6 +415,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"lock_gate\"")
+    print(WATERWAY = LOCK_GATE)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["streets"]],
@@ -399,6 +424,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"sluice_gate\"")
+  print(WATERWAY = SLUICE_GATE)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["streets"]],
@@ -407,6 +433,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"bridge\"")
+    print(WATERWAY = BRIDGE)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["streets"]],
@@ -415,6 +442,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"footway\"")
+    print(FOOTWAY)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["streets"]],
@@ -424,6 +452,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"cycleway\"")
+    print(CYCLEWAY)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["streets"]],
@@ -433,6 +462,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"pedestrian\"")
+    print(PEDESTRIAN)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["streets"]],
@@ -442,6 +472,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"path\"")
+    print(PATH)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["streets"]],
@@ -451,6 +482,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"residential\"")
+    print(RESIDENTIAL)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["streets"]],
@@ -460,6 +492,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"living_street\"")
+    print(LIVING_STREET)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["streets"]],
@@ -469,6 +502,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"unclassified\"")
+    print(UNCLASSIFIED)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["streets"]],
@@ -478,6 +512,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"service\"")
+    print(SERVICE)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["streets"]],
@@ -487,6 +522,7 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"construction\"")
+    print(CONSTRUCTION hw)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["lines"]],
     color = themeOptions[["colors"]][["streets"]],
@@ -497,6 +533,7 @@
   .tick(verbose, progBar, ticks, shiny)
   # Medium streets #############################################################
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"tertiary_link\"")
+    print(TERTIARY_link)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = NA,
@@ -513,6 +550,7 @@
     )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"tertiary\"")
+    print(TERTIARY)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = NA,
@@ -529,6 +567,7 @@
     )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"secondary_link\"")
+    print(SECONDARY_LINK)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = NA,
@@ -545,6 +584,7 @@
     )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"secondary\"")
+    print(SECONDARY)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = NA,
@@ -562,6 +602,7 @@
   .tick(verbose, progBar, ticks, shiny)
   # Large streets ##############################################################
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"primary_link\"")
+    print(PRIMARY_LINK)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = NA,
@@ -578,6 +619,7 @@
     )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"primary\"")
+    print(PRIMARY)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = NA,
@@ -594,6 +636,7 @@
     )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"trunk_link\"")
+    print(TRUNK_LINK)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = NA,
@@ -610,6 +653,7 @@
     )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"trunk_loop\"")
+    print(TRUNK_LOOP)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = NA,
@@ -626,6 +670,7 @@
     )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"trunk\"")
+    print(TRUNK)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = NA,
@@ -642,6 +687,7 @@
     )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"motorway_link\"")
+    print(MOTORWAY_LINK)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = NA,
@@ -658,6 +704,7 @@
     )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"motorway\"")
+    print(MOTORWAY)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = NA,
@@ -675,6 +722,7 @@
   .tick(verbose, progBar, ticks, shiny)
   # Buildings ##################################################################
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"building\"")
+    print(BUILDING)
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["buildings"]], size = length(obj[["polygons"]]), replace = TRUE),
