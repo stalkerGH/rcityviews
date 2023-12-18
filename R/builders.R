@@ -340,16 +340,16 @@
   )
   .tick(verbose, progBar, ticks, shiny)
   # Landuse lines ##############################################################
-  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
-  print("COASTLINE")
-  int_p <- int_p + ggplot2::geom_sf(
-    data = obj[["lines"]],
-    color = themeOptions[["colors"]][["contours"]],
-    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-    lineend = "round",
-    inherit.aes = FALSE
-  )
-  .tick(verbose, progBar, ticks, shiny)
+#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
+#   print("COASTLINE")
+#   int_p <- int_p + ggplot2::geom_sf(
+#     data = obj[["lines"]],
+#     color = themeOptions[["colors"]][["contours"]],
+#     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+#     lineend = "round",
+#     inherit.aes = FALSE
+#   )
+#   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"peninsula\"")
   print("PENINSULA")
   int_p <- int_p + ggplot2::geom_sf(
@@ -816,7 +816,7 @@
 }
 
 .getBoundaries <- function(city, border, zoom = NULL, input = NULL) {
-  defaultRadius <- 0.0225
+  defaultRadius <- 0.05
   if (!is.null(zoom)) {
     radius <- geosphere::distm(x = c(city[["long"]], city[["lat"]]), y = c(city[["long"]], city[["lat"]] + defaultRadius * (1 / zoom)), fun = geosphere::distHaversine)
   } else {
