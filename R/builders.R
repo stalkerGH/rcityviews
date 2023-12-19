@@ -34,13 +34,13 @@
     if (!is.null(motherObj[["sea"]])) {
       obj <- .checkAndCrop(motherObj[["sea"]][["geometry"]], cropped, border)
       int_p <- int_p + ggplot2::geom_sf(
-#         data = obj,
-#         fill = themeOptions[["colors"]][["water"]],
-#         color = themeOptions[["colors"]][["waterlines"]],
-#         linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-#         inherit.aes = FALSE
-#       )
-#     }
+        data = obj,
+        fill = themeOptions[["colors"]][["water"]],
+        color = themeOptions[["colors"]][["waterlines"]],
+        linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+        inherit.aes = FALSE
+      )
+     }
     if (!is.null(motherObj[["land"]])) {
       obj <- .checkAndCrop(motherObj[["land"]][["geometry"]], cropped, border)
       int_p <- int_p + ggplot2::geom_sf(
@@ -62,16 +62,16 @@
       )
     }
   }
-  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
-  print("natural = coastline")
-  int_p <- int_p + ggplot2::geom_sf(
-    data = obj[["polygons"]],
-    fill = themeOptions[["colors"]][["background"]],
-    color = themeOptions[["colors"]][["contours"]],
-    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-    inherit.aes = FALSE
-  )
-  .tick(verbose, progBar, ticks, shiny)
+#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
+#   print("natural = coastline")
+#   int_p <- int_p + ggplot2::geom_sf(
+#     data = obj[["polygons"]],
+#     fill = themeOptions[["colors"]][["background"]],
+#     color = themeOptions[["colors"]][["contours"]],
+#     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+#     inherit.aes = FALSE
+#   )
+#   .tick(verbose, progBar, ticks, shiny)
   # Landuse ####################################################################
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"leisure\"=\"park\"")
   print("leisure = park")
