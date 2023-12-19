@@ -69,16 +69,16 @@
       )
     }
   }
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
-#   print("natural = coastline")
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["polygons"]],
-#     fill = themeOptions[["colors"]][["background"]],
-#     color = themeOptions[["colors"]][["contours"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-#     inherit.aes = FALSE
-#   )
-#   .tick(verbose, progBar, ticks, shiny)
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
+  print("natural = coastline")
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["polygons"]],
+    fill = themeOptions[["colors"]][["background"]],
+    color = themeOptions[["colors"]][["contours"]],
+    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+    inherit.aes = FALSE
+  )
+  .tick(verbose, progBar, ticks, shiny)
   # Landuse ####################################################################
   print("Krok 7")
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"leisure\"=\"park\"")
@@ -337,27 +337,27 @@
     inherit.aes = FALSE
   )
   .tick(verbose, progBar, ticks, shiny)
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"ditch\"")
-#   print("WATERWAY = DITCH")
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["lines"]],
-#     color = themeOptions[["colors"]][["water"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["water"]],
-#     lineend = "round",
-#     inherit.aes = FALSE
-#   )
-#   .tick(verbose, progBar, ticks, shiny)
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"ditch\"")
+  print("WATERWAY = DITCH")
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["lines"]],
+    color = themeOptions[["colors"]][["water"]],
+    linewidth = themeOptions[["size"]][["borders"]][["water"]],
+    lineend = "round",
+    inherit.aes = FALSE
+  )
+  .tick(verbose, progBar, ticks, shiny)
   # Landuse lines ##############################################################
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
-#   print("COASTLINE")
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["lines"]],
-#     color = themeOptions[["colors"]][["contours"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-#     lineend = "round",
-#     inherit.aes = FALSE
-#   )
-#   .tick(verbose, progBar, ticks, shiny)
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
+  print("COASTLINE")
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["lines"]],
+    color = themeOptions[["colors"]][["contours"]],
+    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+    lineend = "round",
+    inherit.aes = FALSE
+  )
+  .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"peninsula\"")
   print("PENINSULA")
   int_p <- int_p + ggplot2::geom_sf(
