@@ -25,43 +25,43 @@
   themeOptions[["size"]][["streets"]] <- lapply(themeOptions[["size"]][["streets"]], FUN = "*", zoom)
   themeOptions[["size"]][["borders"]] <- lapply(themeOptions[["size"]][["borders"]], FUN = "*", zoom)
   # Initialize empty plot ######################################################
-  int_p <- ggplot2::ggplot()
-  .tick(verbose, progBar, ticks, shiny)
-  # Ocean and land features get special treatment ##############################
-  query <- osmdata::osmdata_sf(q = osmdata::add_osm_feature(opq = bbox, key = "natural", value = "coastline"))
-  if (!is.null(query[["osm_lines"]])) {
-    motherObj <- .line2poly(obj = query[["osm_lines"]], bbox = panel)
-    if (!is.null(motherObj[["sea"]])) {
-      obj <- .checkAndCrop(motherObj[["sea"]][["geometry"]], cropped, border)
-      int_p <- int_p + ggplot2::geom_sf(
-        data = obj,
-        fill = themeOptions[["colors"]][["water"]],
-        color = themeOptions[["colors"]][["waterlines"]],
-        linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-        inherit.aes = FALSE
-      )
-     }
-    if (!is.null(motherObj[["land"]])) {
-      obj <- .checkAndCrop(motherObj[["land"]][["geometry"]], cropped, border)
-      int_p <- int_p + ggplot2::geom_sf(
-        data = obj,
-        fill = themeOptions[["colors"]][["background"]],
-        color = themeOptions[["colors"]][["contours"]],
-        linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-        inherit.aes = FALSE
-      )
-    }
-    if (!is.null(motherObj[["islands"]])) {
-      obj <- .checkAndCrop(motherObj[["islands"]][["geometry"]], cropped, border)
-      int_p <- int_p + ggplot2::geom_sf(
-        data = obj,
-        fill = themeOptions[["colors"]][["background"]],
-        color = themeOptions[["colors"]][["contours"]],
-        linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-        inherit.aes = FALSE
-      )
-    }
-  }
+#   int_p <- ggplot2::ggplot()
+#   .tick(verbose, progBar, ticks, shiny)
+#   # Ocean and land features get special treatment ##############################
+#   query <- osmdata::osmdata_sf(q = osmdata::add_osm_feature(opq = bbox, key = "natural", value = "coastline"))
+#   if (!is.null(query[["osm_lines"]])) {
+#     motherObj <- .line2poly(obj = query[["osm_lines"]], bbox = panel)
+#     if (!is.null(motherObj[["sea"]])) {
+#       obj <- .checkAndCrop(motherObj[["sea"]][["geometry"]], cropped, border)
+#       int_p <- int_p + ggplot2::geom_sf(
+#         data = obj,
+#         fill = themeOptions[["colors"]][["water"]],
+#         color = themeOptions[["colors"]][["waterlines"]],
+#         linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+#         inherit.aes = FALSE
+#       )
+#      }
+#     if (!is.null(motherObj[["land"]])) {
+#       obj <- .checkAndCrop(motherObj[["land"]][["geometry"]], cropped, border)
+#       int_p <- int_p + ggplot2::geom_sf(
+#         data = obj,
+#         fill = themeOptions[["colors"]][["background"]],
+#         color = themeOptions[["colors"]][["contours"]],
+#         linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+#         inherit.aes = FALSE
+#       )
+#     }
+#     if (!is.null(motherObj[["islands"]])) {
+#       obj <- .checkAndCrop(motherObj[["islands"]][["geometry"]], cropped, border)
+#       int_p <- int_p + ggplot2::geom_sf(
+#         data = obj,
+#         fill = themeOptions[["colors"]][["background"]],
+#         color = themeOptions[["colors"]][["contours"]],
+#         linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+#         inherit.aes = FALSE
+#       )
+#     }
+#   }
 #   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
 #   print("natural = coastline")
 #   int_p <- int_p + ggplot2::geom_sf(
@@ -75,7 +75,7 @@
   # Landuse ####################################################################
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"leisure\"=\"park\"")
   print("leisure = park")
-  int_p <- int_p + ggplot2::geom_sf(
+  int_p <- ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
     color = themeOptions[["colors"]][["contours"]],
