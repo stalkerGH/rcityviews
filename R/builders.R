@@ -21,6 +21,7 @@
     progBar$tick(0)
     progBar$message(paste0("Retrieving \u00A9 OpenStreetMap features for ", city[["name"]], ", ", city[["country"]]))
   }
+  print("Krok 0")  
   # Scale the streets with the zoom
   themeOptions[["size"]][["streets"]] <- lapply(themeOptions[["size"]][["streets"]], FUN = "*", zoom)
   themeOptions[["size"]][["borders"]] <- lapply(themeOptions[["size"]][["borders"]], FUN = "*", zoom)
