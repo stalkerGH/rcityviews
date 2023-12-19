@@ -242,18 +242,18 @@
   )
   .tick(verbose, progBar, ticks, shiny)
 #   # Water ######################################################################
-#   print("preWATERWAY = RIVER")
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"river\"")
-#   print("WATERWAY = RIVER")
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["lines"]],
-#     fill = themeOptions[["colors"]][["water"]],
-#     color = themeOptions[["colors"]][["waterlines"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["river"]],
-#     lineend = "round",
-#     inherit.aes = FALSE
-#   )
-#   .tick(verbose, progBar, ticks, shiny)
+  print("preWATERWAY = RIVER")
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"river\"")
+  print("WATERWAY = RIVER")
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["lines"]],
+    fill = themeOptions[["colors"]][["water"]],
+    color = themeOptions[["colors"]][["waterlines"]],
+    linewidth = themeOptions[["size"]][["borders"]][["river"]],
+    lineend = "round",
+    inherit.aes = FALSE
+  )
+  .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"canal\"")
   print("WATERWAY = CANAL")
   int_p <- int_p + ggplot2::geom_sf(
@@ -337,16 +337,16 @@
     inherit.aes = FALSE
   )
   .tick(verbose, progBar, ticks, shiny)
-  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"ditch\"")
-  print("WATERWAY = DITCH")
-  int_p <- int_p + ggplot2::geom_sf(
-    data = obj[["lines"]],
-    color = themeOptions[["colors"]][["water"]],
-    linewidth = themeOptions[["size"]][["borders"]][["water"]],
-    lineend = "round",
-    inherit.aes = FALSE
-  )
-  .tick(verbose, progBar, ticks, shiny)
+#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"waterway\"=\"ditch\"")
+#   print("WATERWAY = DITCH")
+#   int_p <- int_p + ggplot2::geom_sf(
+#     data = obj[["lines"]],
+#     color = themeOptions[["colors"]][["water"]],
+#     linewidth = themeOptions[["size"]][["borders"]][["water"]],
+#     lineend = "round",
+#     inherit.aes = FALSE
+#   )
+#   .tick(verbose, progBar, ticks, shiny)
   # Landuse lines ##############################################################
 #   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
 #   print("COASTLINE")
