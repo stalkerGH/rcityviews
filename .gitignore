@@ -40,4 +40,4 @@ vignettes/*.pdf
 .Renviron
 
 # Moje dodatki
-/R/builders.nowater.R
+R/builders.nowater.R
