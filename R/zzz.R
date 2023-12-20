@@ -14,17 +14,17 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 .onLoad <- function(libname, pkgname) {
-  sysfonts::font_add_google("Caveat")
-  sysfonts::font_add_google("Imbue")
-  sysfonts::font_add_google("Damion")
-  sysfonts::font_add_google("Oswald")
-  sysfonts::font_add_google("Rampart One")
-  sysfonts::font_add_google("Fredericka the Great")
-  sysfonts::font_add_google("Dancing Script")
-  sysfonts::font_add_google("Walter Turncoat")
-  sysfonts::font_add("American Uncial Regular", system.file("fonts", "uncial.otf", package = "rcityviews"))
-  sysfonts::font_add("Rage", system.file("fonts", "rage.ttf", package = "rcityviews"))
-  showtext::showtext_auto(enable = FALSE)
+#   sysfonts::font_add_google("Caveat")
+#   sysfonts::font_add_google("Imbue")
+#   sysfonts::font_add_google("Damion")
+#   sysfonts::font_add_google("Oswald")
+#   sysfonts::font_add_google("Rampart One")
+#   sysfonts::font_add_google("Fredericka the Great")
+#   sysfonts::font_add_google("Dancing Script")
+#   sysfonts::font_add_google("Walter Turncoat")
+#   sysfonts::font_add("American Uncial Regular", system.file("fonts", "uncial.otf", package = "rcityviews"))
+#   sysfonts::font_add("Rage", system.file("fonts", "rage.ttf", package = "rcityviews"))
+  showtext::showtext_auto(enable = TRUE)
   osmdata::set_overpass_url("http://localhost/api/interpreter")
 }
 
