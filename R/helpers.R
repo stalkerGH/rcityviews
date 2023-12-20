@@ -235,7 +235,7 @@
       "rails" = c("#5b5152", "#ffffff"),
       "buildings" = c("#b79798", "#9a7958", "#babbbd"),
       "text" = "#5b5152",
-      "waterlines" = "#9ebfaa"
+#       "waterlines" = "#9ebfaa",
       "rails" = c("#9EBD6E", "#ffffff"),
       "buildings" = c("#FFD3BA", "#FAB9BB","#F49FBC", "#805D93"),
       "text" = "#32130f",
