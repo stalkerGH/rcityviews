@@ -82,7 +82,7 @@
       "streets" = "#32130f",
       "rails" = c("#32130f", "#fff7d8"),
       "buildings" = c("#facc87", "#f39848", "#f8c98c", "#f58762"),
-      "text" = "#32130f",
+      "text" = NA,
       "waterlines" = "#9ebfaa"
     ),
     "modern" = list(
@@ -93,7 +93,7 @@
       "streets" = "#fafafa",
       "rails" = c("#fafafa", "#e6ddd6"),
       "buildings" = "#eb3e20",
-      "text" = "#000000",
+      "text" = NA,
       "waterlines" = "#656c7c"
     ),
     "bright" = list(
@@ -104,7 +104,7 @@
       "streets" = "#2f3737",
       "rails" = c("#2f3737", "#eeefc9"),
       "buildings" = c("#8e76a4", "#a193b1", "#db9b33", "#e8c51e", "#ed6c2e"),
-      "text" = "#2f3737",
+      "text" = NA,
       "waterlines" = "#9ddffb"
     ),
     "delftware" = list(
@@ -115,7 +115,7 @@
       "streets" = "#1F305E",
       "rails" = c("#1F305E", "#fafafa"),
       "buildings" = c("#7ebaee", "#8da8d7", "#3259a6", "#0c133f", "#080e1c"),
-      "text" = "#000000",
+      "text" = NA,
       "waterlines" = "#fafafa"
     ),
     "comic" = list(
@@ -126,7 +126,7 @@
       "streets" = "#222222",
       "rails" = c("#222222", "#ffffff"),
       "buildings" = c("#f4d749", "#daa520", "#a63c44"),
-      "text" = "#222222",
+      "text" = NA,
       "waterlines" = "#607ba4"
     ),
     "rouge" = list(
@@ -137,7 +137,7 @@
       "streets" = "#f2deb8",
       "rails" = c("#f2deb8", "#a25543"),
       "buildings" = "#f2deb8",
-      "text" = "#f2deb8",
+      "text" = NA,
       "waterlines" = "#f2deb8"
     ),
     "original" = list(
@@ -148,7 +148,7 @@
       "streets" = "#32130f",
       "rails" = "#32130f",
       "buildings" = "#fdf9f5",
-      "text" = "#32130f",
+      "text" = NA,
       "waterlines" = "#32130f"
     ),
     "midearth" = list(
@@ -159,9 +159,9 @@
       "streets" = "#221c18",
       "rails" = "#221c18",
       "buildings" = "#53402a",
-      "text" = "#221c18",
+      "text" = NA",
       "waterlines" = "#c3c9b6",
-      "textshadow" = "#f7f3ea"
+      "textshadow" = "NA
     ),
     "batik" = list(
       "background" = "#161417",
@@ -171,7 +171,7 @@
       "streets" = "#d7c5b8",
       "rails" = "#d7c5b8",
       "buildings" = c("#ece3d9", "#9e5426", "#5d473c", "#c0b28a"),
-      "text" = "#d7c5b8",
+      "text" = NA,
       "waterlines" = "#214040"
     ),
     "vice" = list(
@@ -182,21 +182,21 @@
       "streets" = "#e282af",
       "rails" = "#e282af",
       "buildings" = "#fff01f",
-      "text" = "#ffffff",
+      "text" = NA,
       "waterlines" = "#a3bff4",
       "textshadow" = "#e282af"
     ),
     "bw" = list(
       "background" = "#232323",
-      "water" = "#cde6ff",
+      "water" = "#0093dd",
       "landuse" = NA,
       "contours" = NA,
-      "streets" = "#808080",
+      "streets" = "#b8b8b8",
       "rails" = c("#808080", "#232323"),
       "buildings" = NA,
-      "text" = "#ffffff",
-      "waterlines" = "#ffffff",
-      "textshadow" = "#ffffff"
+      "text" = NA,
+      "waterlines" = NA,
+      "textshadow" = NA
     ),
   )
   font <- switch(theme,
