@@ -202,52 +202,57 @@
     "vintage" = list(
       "family" = "Fredericka the Great",
       "face" = "plain",
-      "scale" = 1
+      "scale" = 0
     ),
     "modern" = list(
       "family" = "Imbue",
       "face" = "plain",
-      "scale" = 1
+      "scale" = 0
     ),
     "bright" = list(
       "family" = "Damion",
       "face" = "plain",
-      "scale" = 1
+      "scale" = 0
     ),
     "delftware" = list(
       "family" = "Dancing Script",
       "face" = "bold",
-      "scale" = 1
+      "scale" = 0
     ),
     "comic" = list(
       "family" = "Rampart One",
       "face" = "plain",
-      "scale" = 1
+      "scale" = 0
     ),
     "rouge" = list(
       "family" = "Oswald",
       "face" = "bold",
-      "scale" = 1
+      "scale" = 0
     ),
     "original" = list(
       "family" = "Caveat",
       "face" = "bold",
-      "scale" = 1
+      "scale" = 0
     ),
     "midearth" = list(
       "family" = "American Uncial Regular",
       "face" = "plain",
-      "scale" = 1
+      "scale" = 0
     ),
     "batik" = list(
       "family" = "Walter Turncoat",
       "face" = "plain",
-      "scale" = 1
+      "scale" = 0
     ),
     "vice" = list(
       "family" = "Rage",
       "face" = "bold",
-      "scale" = 1
+      "scale" = 0
+    ),
+    "bw" = list(
+      "family" = "Rage",
+      "face" = "bold",
+      "scale" = 0
     )
   )
   size <- list()
