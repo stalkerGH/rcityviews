@@ -224,7 +224,7 @@ cityview <- function(name = NULL,
     return(invisible())
   }
   if (bot) {
-#     cat(paste0(city[["name"]], ", ", city[["country"]]))
+     cat(paste0(city[["name"]], ", ", city[["country"]]))
     return(invisible())
   }
   # Create the bounding box ####################################################
