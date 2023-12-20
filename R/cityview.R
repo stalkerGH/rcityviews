@@ -36,7 +36,7 @@
 #'   legend = FALSE,
 #'   places = 0,
 #'   license = TRUE,
-#'   timeout = 300,
+#'   timeout = 25,
 #'   filename = NULL,
 #'   verbose = TRUE,
 #'   bot = FALSE
@@ -187,7 +187,9 @@ cityview <- function(name = NULL,
                      zoom = 1,
                      theme = c(
                        "vintage", "modern", "bright", "delftware", "comic",
-                       "rouge", "original", "midearth", "batik", "vice", "bw"
+                       "rouge", "original", "midearth", "batik", "vice", "bw",
+                       "blond1", "blond2", "blond3", "peach", "auburn",
+                       "minimal_green", "minimal_green_invert"
                      ),
                      border = c(
                        "none", "circle", "rhombus", "square",
@@ -197,7 +199,7 @@ cityview <- function(name = NULL,
                      legend = FALSE,
                      places = 0,
                      license = FALSE,
-                     timeout = 60,
+                     timeout = 300,
                      filename = NULL,
                      verbose = TRUE,
                      bot = FALSE) {
