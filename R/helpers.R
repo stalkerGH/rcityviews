@@ -161,7 +161,7 @@
       "buildings" = "#53402a",
       "text" = NA,
       "waterlines" = "#c3c9b6",
-      "textshadow" = "NA
+      "textshadow" = NA
     ),
     "batik" = list(
       "background" = "#161417",
