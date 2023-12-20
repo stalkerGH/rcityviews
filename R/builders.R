@@ -450,45 +450,45 @@
     inherit.aes = FALSE
   )
   .tick(verbose, progBar, ticks, shiny)
-  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"footway\"")
-  print("FOOTWAY")
-  int_p <- int_p + ggplot2::geom_sf(
-    data = obj[["lines"]],
-    color = themeOptions[["colors"]][["streets"]],
-    linewidth = themeOptions[["size"]][["streets"]][["path"]],
-    lineend = "round",
-    inherit.aes = FALSE
-  )
-  .tick(verbose, progBar, ticks, shiny)
-  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"cycleway\"")
-  print("CYCLEWAY")
-  int_p <- int_p + ggplot2::geom_sf(
-    data = obj[["lines"]],
-    color = themeOptions[["colors"]][["streets"]],
-    linewidth = themeOptions[["size"]][["streets"]][["path"]],
-    lineend = "round",
-    inherit.aes = FALSE
-  )
-  .tick(verbose, progBar, ticks, shiny)
-  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"pedestrian\"")
-  print("PEDESTRIAN")
-  int_p <- int_p + ggplot2::geom_sf(
-    data = obj[["lines"]],
-    color = themeOptions[["colors"]][["streets"]],
-    linewidth = themeOptions[["size"]][["streets"]][["path"]],
-    lineend = "round",
-    inherit.aes = FALSE
-  )
-  .tick(verbose, progBar, ticks, shiny)
-  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"path\"")
-  print("PATH")
-  int_p <- int_p + ggplot2::geom_sf(
-    data = obj[["lines"]],
-    color = themeOptions[["colors"]][["streets"]],
-    linewidth = themeOptions[["size"]][["streets"]][["path"]],
-    lineend = "round",
-    inherit.aes = FALSE
-  )
+#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"footway\"")
+#   print("FOOTWAY")
+#   int_p <- int_p + ggplot2::geom_sf(
+#     data = obj[["lines"]],
+#     color = themeOptions[["colors"]][["streets"]],
+#     linewidth = themeOptions[["size"]][["streets"]][["path"]],
+#     lineend = "round",
+#     inherit.aes = FALSE
+#   )
+#   .tick(verbose, progBar, ticks, shiny)
+#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"cycleway\"")
+#   print("CYCLEWAY")
+#   int_p <- int_p + ggplot2::geom_sf(
+#     data = obj[["lines"]],
+#     color = themeOptions[["colors"]][["streets"]],
+#     linewidth = themeOptions[["size"]][["streets"]][["path"]],
+#     lineend = "round",
+#     inherit.aes = FALSE
+#   )
+#   .tick(verbose, progBar, ticks, shiny)
+#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"pedestrian\"")
+#   print("PEDESTRIAN")
+#   int_p <- int_p + ggplot2::geom_sf(
+#     data = obj[["lines"]],
+#     color = themeOptions[["colors"]][["streets"]],
+#     linewidth = themeOptions[["size"]][["streets"]][["path"]],
+#     lineend = "round",
+#     inherit.aes = FALSE
+#   )
+#   .tick(verbose, progBar, ticks, shiny)
+#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"path\"")
+#   print("PATH")
+#   int_p <- int_p + ggplot2::geom_sf(
+#     data = obj[["lines"]],
+#     color = themeOptions[["colors"]][["streets"]],
+#     linewidth = themeOptions[["size"]][["streets"]][["path"]],
+#     lineend = "round",
+#     inherit.aes = FALSE
+#   )
   .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"residential\"")
   print("RESIDENTIAL")
