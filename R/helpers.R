@@ -159,7 +159,7 @@
       "streets" = "#221c18",
       "rails" = "#221c18",
       "buildings" = "#53402a",
-      "text" = NA",
+      "text" = NA,
       "waterlines" = "#c3c9b6",
       "textshadow" = "NA
     ),
