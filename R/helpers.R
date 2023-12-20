@@ -195,7 +195,8 @@
       "rails" = c("#808080", "#232323"),
       "buildings" = NA,
       "text" = "#ffffff",
-      "waterlines" = "#ffffff"
+      "waterlines" = "#ffffff",
+      "textshadow" = "#ffffff"
     ),
   )
   font <- switch(theme,
