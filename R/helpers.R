@@ -197,6 +197,72 @@
       "text" = NA,
       "waterlines" = NA
     ),
+    "blond1" = list(
+      "background" = "#babbbd",
+      "water" = "#4b9475",
+      "landuse" = "#babbbd",
+      "contours" = "#5b5152",
+      "streets" = "#e282af",
+      "rails" = "#5b5152",
+      "buildings" = "#5b5152",
+      "text" = "#5b5152",
+      "waterlines" = "#4b9475",
+      "textshadow" = "#9a7958"
+    ),
+    "blond2" = list(
+      "background" = "#ffffff",
+      "background" = "#fff7d8",
+      "water" = "#169873",
+      "landuse" = "#babbbd",
+      "landuse" = "#FFD3BA",
+      "contours" = "#5b5152",
+      "streets" = "#5b5152",
+      "rails" = c("#9EBD6E", "#ffffff"),
+      "buildings" = c("#FFD3BA", "#FAB9BB","#F49FBC", "#805D93"),
+      "rails" = c("#9EBD6E", "#fff7d8"),
+      "buildings" = c("#babbbd", "#FAB9BB","#F49FBC", "#805D93"),
+      "text" = "#32130f",
+      "waterlines" = "#169873"
+    ),
+    "blond3" = list(
+      "background" = "#ffffff",
+      "water" = "#98a89d",
+      "landuse" = "#ffffff",
+      "water" = "#169873",
+      "landuse" = "#babbbd",
+      "contours" = "#5b5152",
+      "streets" = "#5b5152",
+      "rails" = c("#5b5152", "#ffffff"),
+      "buildings" = c("#b79798", "#9a7958", "#babbbd"),
+      "text" = "#5b5152",
+      "waterlines" = "#9ebfaa"
+      "rails" = c("#9EBD6E", "#ffffff"),
+      "buildings" = c("#FFD3BA", "#FAB9BB","#F49FBC", "#805D93"),
+      "text" = "#32130f",
+      "waterlines" = "#169873"
+    ),
+    "peach" = list(
+      "background" = "#F9EFDC",
+      "water" = "#a1e3ff",
+      "landuse" = "#64B96A",
+      "contours" = "#32130f",
+      "streets" = "#2F3737",
+      "rails" = c("#F2F4CB", "#F9EFDC"),
+      "buildings" = c("#FFC857", "#E9724C","#C5283D"),
+      "text" = "#343b47",
+      "waterlines" = "#85c9e6"
+    ),
+    "auburn" = list(
+      "background" = "#FFFFFF",
+      "water" = "#a8e1e6",
+      "landuse" = "#8BB174",
+      "contours" = "#32130f",
+      "streets" = "#2F3737",
+      "rails" = c("#F2F4CB", "#FFFFFF"),
+      "buildings" = c("#433633", "#FF5E5B", "#FF5E5B"),
+      "text" = "#343b47",
+      "waterlines" = "#a8e1e6"
+    )
   )
   font <- switch(theme,
     "vintage" = list(
@@ -253,6 +319,53 @@
       "family" = "Rage",
       "face" = "bold",
       "scale" = 0
+    ),
+    "blond1" = list(
+      "family" = "Fredericka the Great",
+      "face" = "plain",
+      "scale" = 0
+    ),
+    "blond2" = list(
+      "family" = "Fredericka the Great",
+      "face" = "plain",
+      "scale" = 0
+    ),
+      "blond3" = list(
+      "family" = "Fredericka the Great",
+      "face" = "plain",
+      "scale" = 0
+    ),
+    "peach" = list(
+      "family" = "Fredericka the Great",
+      "face" = "plain",
+      "scale" = 0
+    ),
+    "auburn" = list(
+      "family" = "Fredericka the Great",
+      "face" = "plain",
+      "scale" = 0
+    ),
+    "minimal_green" = list(
+      "background" = "#FFFFFF",
+      "water" = "#169873",
+      "landuse" = "#FFFFFF",
+      "contours" = "#169873",
+      "streets" = "#169873",
+      "rails" = c("#169873", "#FFFFFF"),
+      "buildings" = c("#169873"),
+      "text" = "#169873",
+      "waterlines" = "#169873"
+    ),
+    "minimal_green_invert" = list(
+      "background" = "#000000",
+      "water" = "#169873",
+      "landuse" = "#000000",
+      "contours" = "#169873",
+      "streets" = "#169873",
+      "rails" = c("#169873", "#000000"),
+      "buildings" = c("#169873"),
+      "text" = "#169873",
+      "waterlines" = "#169873"
     )
   )
   size <- list()
