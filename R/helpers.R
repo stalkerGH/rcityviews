@@ -262,6 +262,28 @@
       "buildings" = c("#433633", "#FF5E5B", "#FF5E5B"),
       "text" = "#343b47",
       "waterlines" = "#a8e1e6"
+    ),
+    "minimal_green" = list(
+      "background" = "#FFFFFF",
+      "water" = "#169873",
+      "landuse" = "#FFFFFF",
+      "contours" = "#169873",
+      "streets" = "#169873",
+      "rails" = c("#169873", "#FFFFFF"),
+      "buildings" = c("#169873"),
+      "text" = "#169873",
+      "waterlines" = "#169873"
+    ),
+    "minimal_green_invert" = list(
+      "background" = "#000000",
+      "water" = "#169873",
+      "landuse" = "#000000",
+      "contours" = "#169873",
+      "streets" = "#169873",
+      "rails" = c("#169873", "#000000"),
+      "buildings" = c("#169873"),
+      "text" = "#169873",
+      "waterlines" = "#169873"
     )
   )
   font <- switch(theme,
@@ -346,26 +368,14 @@
       "scale" = 0
     ),
     "minimal_green" = list(
-      "background" = "#FFFFFF",
-      "water" = "#169873",
-      "landuse" = "#FFFFFF",
-      "contours" = "#169873",
-      "streets" = "#169873",
-      "rails" = c("#169873", "#FFFFFF"),
-      "buildings" = c("#169873"),
-      "text" = "#169873",
-      "waterlines" = "#169873"
+      "family" = "Fredericka the Great",
+      "face" = "plain",
+      "scale" = 0
     ),
     "minimal_green_invert" = list(
-      "background" = "#000000",
-      "water" = "#169873",
-      "landuse" = "#000000",
-      "contours" = "#169873",
-      "streets" = "#169873",
-      "rails" = c("#169873", "#000000"),
-      "buildings" = c("#169873"),
-      "text" = "#169873",
-      "waterlines" = "#169873"
+      "family" = "Fredericka the Great",
+      "face" = "plain",
+      "scale" = 0
     )
   )
   size <- list()
