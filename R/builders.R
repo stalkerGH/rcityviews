@@ -17,8 +17,8 @@
   label <- NULL
   if (verbose) {
     # Initialize progress bar ##################################################
-    progBar <- progress::progress_bar$new(format = "  :spin [:bar] :percent | Time remaining: :eta\n", total = ticks, clear = FALSE, show_after = 0)
-    progBar$tick(0)
+#     progBar <- progress::progress_bar$new(format = "  :spin [:bar] :percent | Time remaining: :eta\n", total = ticks, clear = FALSE, show_after = 0)
+#     progBar$tick(0)
     progBar$message(paste0("Retrieving \u00A9 OpenStreetMap features for ", city[["name"]], ", ", city[["country"]]))
   }
   message(white("Krok 0"))
