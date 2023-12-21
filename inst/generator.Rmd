@@ -1,0 +1,45 @@
+---
+title: "Generator"
+author: "stalker"
+date: "`r Sys.Date()`"
+output: html_document
+params:
+  lat: 43.19
+  lon: -0.63
+  zoom: 2
+  theme: "vintage"
+  license: FALSE
+  city: "Swidnica"
+  country: "Poland"
+  dpi: "retina"
+  path: "`r paste0('/home/stalker/Temp/Mapy/')`"
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+# https://www.christophenicault.com/post/understand_size_dimension_ggplot2/
+devtools::load_all()
+library(rcityviews)
+
+city <- new_city(
+  name = params$city,
+  country = params$country,
+  lat = params$lat,
+  long = params$lon
+)
+
+p <- cityview(
+  name = city,
+  zoom = params$zoom,
+  theme = params$theme,
+  license = params$license
+)
+
+
+ggplot2::ggsave(
+  filename = "C:/Users/tgoossens/Desktop/oloron_2_blond.png",
+  plot = p,
+  height = 500,
+  width = 500,
+  units = "mm",
+  dpi = params$dpi)
+```
