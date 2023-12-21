@@ -193,7 +193,8 @@ cityview <- function(name = NULL,
                      ),
                      border = c(
                        "none", "circle", "rhombus", "square",
-                       "hexagon", "octagon", "decagon", "bbox"
+                       "hexagon", "octagon", "decagon", "bbox",
+                       "rectangle_horiz", "rectangle_vert"
                      ),
                      halftone = NULL,
                      legend = FALSE,
