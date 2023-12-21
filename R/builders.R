@@ -881,7 +881,31 @@
       y = c(panel[2], panel[4], panel[4], panel[2], panel[2])
     )
     cropped <- sf::st_sf(sf::st_sfc(sf::st_polygon(list(as.matrix(borderPoints)))), crs = 4326)
-  } else if (border == "hexagon" || border == "octagon" || border == "decagon") {
+  }  else if (border == "rectangle_vert") {
+    borderPoints <- data.frame(
+      x = c(panel[1], panel[1], panel[3], panel[3], panel[1]),
+      y = c( # TODO adapt to negative coords
+        panel[2] - 1/55 * (panel[4] - panel[2]),
+        panel[4] + 1/55 * (panel[4] - panel[2]),
+        panel[4] + 1/55 * (panel[4] - panel[2]),
+        panel[2] - 1/55 * (panel[4] - panel[2]),
+        panel[2] - 1/55 * (panel[4] - panel[2])
+      )
+    )
+    cropped <- sf::st_sf(sf::st_sfc(sf::st_polygon(list(as.matrix(borderPoints)))), crs = 4326)
+  } else if (border == "rectangle_horiz") {
+    borderPoints <- data.frame(
+      x = c(panel[1], panel[1], panel[3], panel[3], panel[1]),
+      y = c( # TODO adapt to negative coords
+        panel[2] + 1/55 * (panel[4] - panel[2]),
+        panel[4] - 1/55 * (panel[4] - panel[2]),
+        panel[4] - 1/55 * (panel[4] - panel[2]),
+        panel[2] + 1/55 * (panel[4] - panel[2]),
+        panel[2] + 1/55 * (panel[4] - panel[2])
+      )
+    )
+    cropped <- sf::st_sf(sf::st_sfc(sf::st_polygon(list(as.matrix(borderPoints)))), crs = 4326)
+  }  else if (border == "hexagon" || border == "octagon" || border == "decagon") {
     nsides <- switch(border,
       "hexagon" = 6,
       "octagon" = 8,
