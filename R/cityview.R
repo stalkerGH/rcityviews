@@ -189,7 +189,7 @@ cityview <- function(name = NULL,
                        "vintage", "modern", "bright", "delftware", "comic",
                        "rouge", "original", "midearth", "batik", "vice", "bw",
                        "blond1", "blond2", "blond3", "peach", "auburn",
-                       "minimal_green", "minimal_green_invert", "blues"
+                       "minimal_green", "minimal_green_invert", "blues", "darkmint"
                      ),
                      border = c(
                        "none", "circle", "rhombus", "square",
