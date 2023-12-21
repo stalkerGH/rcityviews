@@ -188,11 +188,11 @@
     ),
     "bw" = list(
       "background" = "#232323",
-      "water" = "#0093dd",
+      "water" = "#ffffff",
       "landuse" = NA,
       "contours" = NA,
       "streets" = "#b8b8b8",
-      "rails" = c("#808080", "#232323"),
+      "rails" = c("#808080", "#d6d6d6"),
       "buildings" = NA,
       "text" = NA,
       "waterlines" = NA
