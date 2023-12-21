@@ -62,15 +62,15 @@
   return(index)
 }
 
-.tick <- function(verbose, progBar, ticks, shiny) {
-  if (shiny) {
-    shiny::incProgress(amount = 1 / ticks)
-  } else {
-    if (verbose) {
-      progBar$tick()
-    }
-  }
-}
+# .tick <- function(verbose, progBar, ticks, shiny) {
+#   if (shiny) {
+#     shiny::incProgress(amount = 1 / ticks)
+#   } else {
+#     if (verbose) {
+#       progBar$tick()
+#     }
+#   }
+# }
 
 .themeOptions <- function(theme) {
   colors <- switch(theme,
