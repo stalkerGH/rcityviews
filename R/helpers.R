@@ -140,7 +140,7 @@
       "text" = NA,
       "waterlines" = "#f2deb8"
     ),
-    "blue" = list(
+    "blues" = list(
       "background" = "#A5C4D4",
       "water" = "#89CFF0",
       "landuse" = "#008080",
@@ -246,7 +246,6 @@
       "rails" = c("#5b5152", "#ffffff"),
       "buildings" = c("#b79798", "#9a7958", "#babbbd"),
       "text" = "#5b5152",
-#       "waterlines" = "#9ebfaa",
       "rails" = c("#9EBD6E", "#ffffff"),
       "buildings" = c("#FFD3BA", "#FAB9BB","#F49FBC", "#805D93"),
       "text" = "#32130f",
