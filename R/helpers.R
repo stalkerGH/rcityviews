@@ -140,6 +140,17 @@
       "text" = NA,
       "waterlines" = "#f2deb8"
     ),
+    "blue" = list(
+      "background" = "#A5C4D4",
+      "water" = "#89CFF0",
+      "landuse" = "#008080",
+      "contours" = "#000080",
+      "streets" = "#292995",
+      "rails" = c("#A5C4D4", "#89CFF0"),
+      "buildings" = NA,
+      "text" = NA,
+      "waterlines" = "#000080"
+    ),
     "original" = list(
       "background" = "#fdf9f5",
       "water" = "#fdf9f5",
@@ -313,6 +324,11 @@
       "scale" = 0
     ),
     "rouge" = list(
+      "family" = "Oswald",
+      "face" = "bold",
+      "scale" = 0
+    ),
+    "blues" = list(
       "family" = "Oswald",
       "face" = "bold",
       "scale" = 0
