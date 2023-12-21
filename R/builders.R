@@ -13,8 +13,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# .buildCity <- function(city, bbox, zoom, panel, themeOptions, border, halftone, legend, places, cropped, borderPoints, license, verbose, ticks, shiny) {
-.buildCity <- function(city, bbox, zoom, panel, themeOptions, border, halftone, cropped, borderPoints, verbose) {
+ .buildCity <- function(city, bbox, zoom, panel, themeOptions, border, halftone, legend, places, cropped, borderPoints, license, verbose, ticks, shiny) {
   label <- NULL
    if (verbose) {
 #    # Initialize progress bar ##################################################
