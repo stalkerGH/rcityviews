@@ -140,16 +140,16 @@
       "text" = NA,
       "waterlines" = "#f2deb8"
     ),
-    "blues" = list(
-      "background" = "#A5C4D4",
-      "water" = "#89CFF0",
-      "landuse" = "#008080",
-      "contours" = "#000080",
-      "streets" = "#292995",
-      "rails" = c("#A5C4D4", "#89CFF0"),
+    "darkmint" = list(
+      "background" = "#D2FBD4",
+      "water" = "#123F5A",
+      "landuse" = "#A5DBC2",
+      "contours" = "#235D72",
+      "streets" = "#559C9E",
+      "rails" = c("#A5DBC2", "#7BBCB0"),
       "buildings" = NA,
       "text" = NA,
-      "waterlines" = "#000080"
+      "waterlines" = "#123F5A"
     ),
     "original" = list(
       "background" = "#fdf9f5",
