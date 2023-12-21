@@ -15,12 +15,12 @@
 
 .buildCity <- function(city, bbox, zoom, panel, themeOptions, border, halftone, legend, places, cropped, borderPoints, license, verbose, ticks, shiny) {
   label <- NULL
-#   if (verbose) {
+   if (verbose) {
 #    # Initialize progress bar ##################################################
-#     progBar <- progress::progress_bar$new(format = "  :spin [:bar] :percent | Time remaining: :eta\n", total = ticks, clear = FALSE, show_after = 0)
-#     progBar$tick(0)
-#     progBar$message(paste0("Retrieving \u00A9 OpenStreetMap features for ", city[["name"]], ", ", city[["country"]]))
-#  }
+     progBar <- progress::progress_bar$new(format = "  :spin [:bar] :percent | Time remaining: :eta\n", total = ticks, clear = FALSE, show_after = 0)
+     progBar$tick(0)
+     progBar$message(paste0("Retrieving \u00A9 OpenStreetMap features for ", city[["name"]], ", ", city[["country"]]))
+  }
   message(white("Krok 0"))
   # Scale the streets with the zoom
   themeOptions[["size"]][["streets"]] <- lapply(themeOptions[["size"]][["streets"]], FUN = "*", zoom)
