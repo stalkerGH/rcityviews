@@ -140,6 +140,17 @@
       "text" = NA,
       "waterlines" = "#f2deb8"
     ),
+    "prism" = list(
+      "background" = NA,
+      "water" = "#1D6996",
+      "landuse" = "#73AF48",
+      "contours" = "#666666",
+      "streets" = "#EDAD08",
+      "rails" = c("#94346E", "#6F4070"),
+      "buildings" = "#E17C05",
+      "text" = NA,
+      "waterlines" = "#1D6996"
+    ),
     "darkmint" = list(
       "background" = "#D2FBD4",
       "water" = "#123F5A",
@@ -393,6 +404,11 @@
       "scale" = 0
     ),
     "darkmint" = list(
+      "family" = "Fredericka the Great",
+      "face" = "plain",
+      "scale" = 0
+    ),
+    "prism" = list(
       "family" = "Fredericka the Great",
       "face" = "plain",
       "scale" = 0
