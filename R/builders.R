@@ -510,25 +510,25 @@
     inherit.aes = FALSE
   )
 #  .tick(verbose, progBar, ticks, shiny)
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"unclassified\"")
-#   message(white("highway = unclassified"))
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["lines"]],
-#     color = themeOptions[["colors"]][["streets"]],
-#     linewidth = themeOptions[["size"]][["streets"]][["residential"]],
-#     lineend = "round",
-#     inherit.aes = FALSE
-#   )
-#  .tick(verbose, progBar, ticks, shiny)
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"service\"")
-#   message(white("highway = service"))
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["lines"]],
-#     color = themeOptions[["colors"]][["streets"]],
-#     linewidth = themeOptions[["size"]][["streets"]][["residential"]],
-#     lineend = "round",
-#     inherit.aes = FALSE
-#   )
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"unclassified\"")
+  message(white("highway = unclassified"))
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["lines"]],
+    color = themeOptions[["colors"]][["streets"]],
+    linewidth = themeOptions[["size"]][["streets"]][["residential"]],
+    lineend = "round",
+    inherit.aes = FALSE
+  )
+ .tick(verbose, progBar, ticks, shiny)
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"service\"")
+  message(white("highway = service"))
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["lines"]],
+    color = themeOptions[["colors"]][["streets"]],
+    linewidth = themeOptions[["size"]][["streets"]][["residential"]],
+    lineend = "round",
+    inherit.aes = FALSE
+  )
 #  .tick(verbose, progBar, ticks, shiny)
 #   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"construction\"")
 #   message(white("highway = construction"))
