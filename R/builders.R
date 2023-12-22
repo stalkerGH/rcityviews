@@ -519,7 +519,7 @@
     lineend = "round",
     inherit.aes = FALSE
   )
- .tick(verbose, progBar, ticks, shiny)
+#  .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"service\"")
   message(white("highway = service"))
   int_p <- int_p + ggplot2::geom_sf(
