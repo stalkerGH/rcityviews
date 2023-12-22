@@ -26,13 +26,13 @@
   themeOptions[["size"]][["streets"]] <- lapply(themeOptions[["size"]][["streets"]], FUN = "*", zoom)
   themeOptions[["size"]][["borders"]] <- lapply(themeOptions[["size"]][["borders"]], FUN = "*", zoom)
   # Initialize empty plot ######################################################
-  message(white("Krok 1 - inicjalizacja themeOptions"))
+  message(white("Krok 1/6 - inicjalizacja themeOptions"))
   int_p <- ggplot2::ggplot()
-  message(white("Krok 2 - inicjalizacja ggplot2"))
+  message(white("Krok 2/6 - inicjalizacja ggplot2"))
 #  .tick(verbose, progBar, ticks, shiny)
   # Ocean and land features get special treatment ##############################
   query <- osmdata::osmdata_sf(q = osmdata::add_osm_feature(opq = bbox, key = "natural", value = "coastline"))
-  message(white("Krok 3 - inicjalizacja osmdata"))
+  message(white("Krok 3/6 - inicjalizacja osmdata"))
   if (!is.null(query[["osm_lines"]])) {
     motherObj <- .line2poly(obj = query[["osm_lines"]], bbox = panel)
     if (!is.null(motherObj[["sea"]])) {
@@ -45,7 +45,7 @@
         inherit.aes = FALSE
       )
      }
-     message(white("Krok 4 - sprawdzenie czy w obszarze występuje coastline"))
+     message(white("Krok 4/6 - sprawdzenie czy w obszarze występuje coastline"))
     if (!is.null(motherObj[["land"]])) {
       obj <- .checkAndCrop(motherObj[["land"]][["geometry"]], cropped, border)
       int_p <- int_p + ggplot2::geom_sf(
@@ -56,7 +56,7 @@
         inherit.aes = FALSE
       )
     }
-    message(white("Krok 5 - sprawdzenie czy w obszarze występuje land"))
+    message(white("Krok 5/6 - sprawdzenie czy w obszarze występuje land"))
     if (!is.null(motherObj[["islands"]])) {
       obj <- .checkAndCrop(motherObj[["islands"]][["geometry"]], cropped, border)
       int_p <- int_p + ggplot2::geom_sf(
@@ -70,7 +70,7 @@
   }
   message(white("Krok 6 - koniec inicjalizacji i sprawdzania"))
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
-  message(white("natural = coastline"))
+  message(white("Pobieram dane dla natural = coastline"))
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
     fill = themeOptions[["colors"]][["background"]],
