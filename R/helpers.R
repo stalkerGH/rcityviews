@@ -391,6 +391,11 @@
       "family" = "Fredericka the Great",
       "face" = "plain",
       "scale" = 0
+    ),
+    "darkmint" = list(
+      "family" = "Fredericka the Great",
+      "face" = "plain",
+      "scale" = 0
     )
   )
   size <- list()
