@@ -70,6 +70,7 @@
 #     }
 #   }
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"coastline\"")
+  osmdata::overpass_status(quiet = FALSE)
   message(white("natural = coastline"))
   int_p <- int_p + ggplot2::geom_sf(
     data = obj[["polygons"]],
