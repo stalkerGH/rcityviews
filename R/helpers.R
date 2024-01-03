@@ -513,7 +513,7 @@
     "secondary" = 0.5,
     "primary" = 0.6,
     "motorway" = 0.8,
-    "rails" = 0.65,
+    "rails" = 0.75,
     "runway" = 3
   )
   themeOptions <- list(
