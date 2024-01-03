@@ -729,15 +729,15 @@
     )
 #  .tick(verbose, progBar, ticks, shiny)
   # Buildings ##################################################################
-  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"building\"")
-  message(white("Pobieram dane dla buildings"))
-  int_p <- int_p + ggplot2::geom_sf(
-    data = obj[["polygons"]],
-    fill = sample(themeOptions[["colors"]][["buildings"]], size = length(obj[["polygons"]]), replace = TRUE),
-    color = themeOptions[["colors"]][["contours"]],
-    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-    inherit.aes = FALSE
-  )
+#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"building\"")
+#   message(white("Pobieram dane dla buildings"))
+#   int_p <- int_p + ggplot2::geom_sf(
+#     data = obj[["polygons"]],
+#     fill = sample(themeOptions[["colors"]][["buildings"]], size = length(obj[["polygons"]]), replace = TRUE),
+#     color = themeOptions[["colors"]][["contours"]],
+#     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+#     inherit.aes = FALSE
+#   )
 #  .tick(verbose, progBar, ticks, shiny)
   # Specify coordinate system for plot #########################################
   int_p <- int_p + ggplot2::coord_sf(xlim = c(panel[1], panel[3]), ylim = c(panel[2], panel[4]), expand = (border != "none")) +
