@@ -252,6 +252,28 @@
       "text" = NA,
       "waterlines" = NA
     ),
+    "bw_black" = list(
+      "background" = "#000",
+      "water" = "#fff",
+      "landuse" = NA,
+      "contours" = NA,
+      "streets" = "#fff",
+      "rails" = c("#fff", "#000"),
+      "buildings" = NA,
+      "text" = NA,
+      "waterlines" = NA
+    ),
+    "wb_black" = list(
+      "background" = "#fff",
+      "water" = "#000",
+      "landuse" = NA,
+      "contours" = NA,
+      "streets" = "#000",
+      "rails" = c("#fff", "#000"),
+      "buildings" = NA,
+      "text" = NA,
+      "waterlines" = NA
+    ),
     "blond1" = list(
       "background" = "#babbbd",
       "water" = "#4b9475",
@@ -407,6 +429,16 @@
       "scale" = 0
     ),
     "wb" = list(
+      "family" = "Rage",
+      "face" = "bold",
+      "scale" = 0
+    ),
+    "bw_black" = list(
+      "family" = "Rage",
+      "face" = "bold",
+      "scale" = 0
+    ),
+    "wb_black" = list(
       "family" = "Rage",
       "face" = "bold",
       "scale" = 0
