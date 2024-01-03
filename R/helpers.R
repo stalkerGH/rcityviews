@@ -208,13 +208,35 @@
       "waterlines" = "#a3bff4",
       "textshadow" = "#e282af"
     ),
-    "bw" = list(
+    "grey" = list(
       "background" = "#232323",
       "water" = "#ffffff",
       "landuse" = NA,
       "contours" = NA,
       "streets" = "#b8b8b8",
       "rails" = c("#808080", "#d6d6d6"),
+      "buildings" = NA,
+      "text" = NA,
+      "waterlines" = NA
+    ),
+    "bw" = list(
+      "background" = "#232323",
+      "water" = "#ffffff",
+      "landuse" = NA,
+      "contours" = NA,
+      "streets" = "#ffffff",
+      "rails" = c("#ffffff", "#000000"),
+      "buildings" = NA,
+      "text" = NA,
+      "waterlines" = NA
+    ),
+    "wb" = list(
+      "background" = "#ffffff",
+      "water" = "#232323",
+      "landuse" = NA,
+      "contours" = NA,
+      "streets" = "#232323",
+      "rails" = c("#ffffff", "#000000"),
       "buildings" = NA,
       "text" = NA,
       "waterlines" = NA
@@ -363,7 +385,17 @@
       "face" = "bold",
       "scale" = 0
     ),
+    "grey" = list(
+      "family" = "Rage",
+      "face" = "bold",
+      "scale" = 0
+    ),
     "bw" = list(
+      "family" = "Rage",
+      "face" = "bold",
+      "scale" = 0
+    ),
+    "wb" = list(
       "family" = "Rage",
       "face" = "bold",
       "scale" = 0
