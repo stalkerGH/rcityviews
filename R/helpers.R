@@ -269,7 +269,7 @@
       "landuse" = NA,
       "contours" = NA,
       "streets" = "#000000",
-      "rails" = c("#fffff", "#000000"),
+      "rails" = c("#ffffff", "#000000"),
       "buildings" = NA,
       "text" = NA,
       "waterlines" = NA
