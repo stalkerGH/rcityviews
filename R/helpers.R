@@ -253,23 +253,23 @@
       "waterlines" = NA
     ),
     "bw_black" = list(
-      "background" = "#000",
-      "water" = "#fff",
+      "background" = "#000000",
+      "water" = "#ffffff",
       "landuse" = NA,
       "contours" = NA,
-      "streets" = "#fff",
-      "rails" = c("#fff", "#000"),
+      "streets" = "#ffffff",
+      "rails" = c("#ffffff", "#000000"),
       "buildings" = NA,
       "text" = NA,
       "waterlines" = NA
     ),
     "wb_black" = list(
-      "background" = "#fff",
-      "water" = "#000",
+      "background" = "#ffffff",
+      "water" = "#000000",
       "landuse" = NA,
       "contours" = NA,
-      "streets" = "#000",
-      "rails" = c("#fff", "#000"),
+      "streets" = "#000000",
+      "rails" = c("#fffff", "#000000"),
       "buildings" = NA,
       "text" = NA,
       "waterlines" = NA
