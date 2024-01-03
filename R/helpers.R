@@ -74,6 +74,8 @@
 
 .themeOptions <- function(theme) {
   colors <- switch(theme,
+  
+# Kolory z oryginalnego pakietu  
     "vintage" = list(
       "background" = "#fff7d8",
       "water" = "#9ebfaa",
@@ -140,39 +142,6 @@
       "text" = NA,
       "waterlines" = "#f2deb8"
     ),
-    "prism" = list(
-      "background" = NA,
-      "water" = "#1D6996",
-      "landuse" = "#73AF48",
-      "contours" = "#666666",
-      "streets" = "#EDAD08",
-      "rails" = c("#94346E", "#6F4070"),
-      "buildings" = "#E17C05",
-      "text" = NA,
-      "waterlines" = "#1D6996"
-    ),
-    "prism2" = list(
-      "background" = NA,
-      "water" = "#2589c2",
-      "landuse" = "76C16A",
-      "contours" = "#1d1d1d",
-      "streets" = "#FF8700",
-      "rails" = c("#ED3F29", "#b02d1e"),
-      "buildings" = "#DC7E76",
-      "text" = NA,
-      "waterlines" = "#2589c2"
-    ),
-    "darkmint" = list(
-      "background" = "#D2FBD4",
-      "water" = "#123F5A",
-      "landuse" = "#A5DBC2",
-      "contours" = "#235D72",
-      "streets" = "#559C9E",
-      "rails" = c("#A5DBC2", "#7BBCB0"),
-      "buildings" = NA,
-      "text" = NA,
-      "waterlines" = "#123F5A"
-    ),
     "original" = list(
       "background" = "#fdf9f5",
       "water" = "#fdf9f5",
@@ -219,6 +188,52 @@
       "waterlines" = "#a3bff4",
       "textshadow" = "#e282af"
     ),
+    "auburn" = list(
+      "background" = "#FFFFFF",
+      "water" = "#a8e1e6",
+      "landuse" = "#8BB174",
+      "contours" = "#32130f",
+      "streets" = "#2F3737",
+      "rails" = c("#F2F4CB", "#FFFFFF"),
+      "buildings" = c("#433633", "#FF5E5B", "#FF5E5B"),
+      "text" = "#343b47",
+      "waterlines" = "#a8e1e6"
+    ),
+    
+# Kolory dodane przeze mnie
+    "prism" = list(
+      "background" = NA,
+      "water" = "#1D6996",
+      "landuse" = "#73AF48",
+      "contours" = "#666666",
+      "streets" = "#EDAD08",
+      "rails" = c("#94346E", "#6F4070"),
+      "buildings" = "#E17C05",
+      "text" = NA,
+      "waterlines" = "#1D6996"
+    ),
+    "prism2" = list(
+      "background" = NA,
+      "water" = "#2589c2",
+      "landuse" = "76C16A",
+      "contours" = "#1d1d1d",
+      "streets" = "#FF8700",
+      "rails" = c("#ED3F29", "#b02d1e"),
+      "buildings" = "#DC7E76",
+      "text" = NA,
+      "waterlines" = "#2589c2"
+    ),
+    "darkmint" = list(
+      "background" = "#D2FBD4",
+      "water" = "#123F5A",
+      "landuse" = "#A5DBC2",
+      "contours" = "#235D72",
+      "streets" = "#559C9E",
+      "rails" = c("#A5DBC2", "#7BBCB0"),
+      "buildings" = NA,
+      "text" = NA,
+      "waterlines" = "#123F5A"
+    ),
     "grey" = list(
       "background" = "#232323",
       "water" = "#ffffff",
@@ -241,23 +256,23 @@
       "text" = NA,
       "waterlines" = NA
     ),
-    "wb" = list(
-      "background" = "#ffffff",
-      "water" = "#232323",
-      "landuse" = NA,
-      "contours" = NA,
-      "streets" = "#232323",
-      "rails" = c("#ffffff", "#000000"),
-      "buildings" = NA,
-      "text" = NA,
-      "waterlines" = NA
-    ),
-    "bw_black" = list(
+  "bw_black" = list(
       "background" = "#000000",
       "water" = "#ffffff",
       "landuse" = NA,
       "contours" = NA,
       "streets" = "#ffffff",
+      "rails" = c("#ffffff", "#000000"),
+      "buildings" = NA,
+      "text" = NA,
+      "waterlines" = NA
+    ),
+      "wb" = list(
+      "background" = "#ffffff",
+      "water" = "#232323",
+      "landuse" = NA,
+      "contours" = NA,
+      "streets" = "#232323",
       "rails" = c("#ffffff", "#000000"),
       "buildings" = NA,
       "text" = NA,
@@ -327,17 +342,6 @@
       "buildings" = c("#FFC857", "#E9724C","#C5283D"),
       "text" = "#343b47",
       "waterlines" = "#85c9e6"
-    ),
-    "auburn" = list(
-      "background" = "#FFFFFF",
-      "water" = "#a8e1e6",
-      "landuse" = "#8BB174",
-      "contours" = "#32130f",
-      "streets" = "#2F3737",
-      "rails" = c("#F2F4CB", "#FFFFFF"),
-      "buildings" = c("#433633", "#FF5E5B", "#FF5E5B"),
-      "text" = "#343b47",
-      "waterlines" = "#a8e1e6"
     ),
     "minimal_green" = list(
       "background" = "#FFFFFF",

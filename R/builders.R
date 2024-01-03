@@ -487,6 +487,7 @@
     linewidth = themeOptions[["size"]][["streets"]][["runway"]],
     inherit.aes = FALSE
   )
+  # Railways ###################################################################
 #  .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"railway\"=\"rail\"")
   message(white("Pobieram dane dla railway = rail"))
@@ -503,6 +504,7 @@
       linetype = "dashed",
       inherit.aes = FALSE
     )
+  # Small streets ##############################################################
 #  .tick(verbose, progBar, ticks, shiny)
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"residential\"")
   message(white("Pobieram dane dla highway = residential"))
@@ -543,6 +545,16 @@
     lineend = "round",
     inherit.aes = FALSE
   )
+#  .tick(verbose, progBar, ticks, shiny)
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"junction\"=\"roundabout\"")
+  message(white("Pobieram dane dla junction = roundabout"))
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["lines"]],
+    color = themeOptions[["colors"]][["streets"]],
+    linewidth = themeOptions[["size"]][["streets"]][["residential"]],
+    lineend = "round",
+    inherit.aes = FALSE
+  )  
   # Medium streets #############################################################
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"tertiary_link\"")
   message(white("Pobieram dane dla highway = tertiary_link"))
