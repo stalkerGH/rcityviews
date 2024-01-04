@@ -517,14 +517,14 @@
 #     "runway" = 3
 #   )
   size[["streets"]] <- list(
-    "path" = 0.3,
+    "path" = 0.75,
     "residential" = 1,
-    "structure" = 1,
+    "structure" = 2.5,
     "tertiary" = 2,
     "secondary" = 3,
     "primary" = 4,
     "motorway" = 5,
-    "rails" = 6,
+    "rails" = 4,
     "runway" = 3
   )
   themeOptions <- list(
