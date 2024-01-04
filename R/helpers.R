@@ -251,7 +251,7 @@
       "landuse" = NA,
       "contours" = NA,
       "streets" = "#ffffff",
-      "rails" = c("#ffffff", "#000000"),
+      "rails" = c("#f0f0f0", "#000000"),
       "buildings" = NA,
       "text" = NA,
       "waterlines" = NA
@@ -262,7 +262,7 @@
       "landuse" = NA,
       "contours" = NA,
       "streets" = "#ffffff",
-      "rails" = c("#ffffff", "#000000"),
+      "rails" = c("#f0f0f0", "#000000"),
       "buildings" = NA,
       "text" = NA,
       "waterlines" = NA
@@ -273,7 +273,7 @@
       "landuse" = NA,
       "contours" = NA,
       "streets" = "#232323",
-      "rails" = c("#ffffff", "#000000"),
+      "rails" = c("#f0f0f0", "#000000"),
       "buildings" = NA,
       "text" = NA,
       "waterlines" = NA
@@ -284,7 +284,7 @@
       "landuse" = NA,
       "contours" = NA,
       "streets" = "#000000",
-      "rails" = c("#ffffff", "#000000"),
+      "rails" = c("#f0f0f0", "#000000"),
       "buildings" = NA,
       "text" = NA,
       "waterlines" = NA
