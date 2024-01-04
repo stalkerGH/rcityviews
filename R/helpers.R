@@ -505,15 +505,26 @@
     "canal" = 0.5,
     "river" = 0.6
   )
+#   size[["streets"]] <- list(
+#     "path" = 0.2,
+#     "residential" = 0.3,
+#     "structure" = 0.35,
+#     "tertiary" = 0.4,
+#     "secondary" = 0.5,
+#     "primary" = 0.6,
+#     "motorway" = 0.8,
+#     "rails" = 0.75,
+#     "runway" = 3
+#   )
   size[["streets"]] <- list(
-    "path" = 0.2,
-    "residential" = 0.3,
-    "structure" = 0.35,
-    "tertiary" = 0.4,
-    "secondary" = 0.5,
-    "primary" = 0.6,
-    "motorway" = 0.8,
-    "rails" = 0.75,
+    "path" = 0.3,
+    "residential" = 0.45,
+    "structure" = 0.55,
+    "tertiary" = 0.65,
+    "secondary" = 0.75,
+    "primary" = 0.85,
+    "motorway" = 1,
+    "rails" = 1,
     "runway" = 3
   )
   themeOptions <- list(
