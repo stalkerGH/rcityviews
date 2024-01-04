@@ -518,13 +518,13 @@
 #   )
   size[["streets"]] <- list(
     "path" = 0.3,
-    "residential" = 0.45,
-    "structure" = 0.55,
-    "tertiary" = 0.65,
-    "secondary" = 0.75,
-    "primary" = 0.85,
-    "motorway" = 1,
-    "rails" = 1,
+    "residential" = 1,
+    "structure" = 1,
+    "tertiary" = 2,
+    "secondary" = 3,
+    "primary" = 4,
+    "motorway" = 5,
+    "rails" = 6,
     "runway" = 3
   )
   themeOptions <- list(
