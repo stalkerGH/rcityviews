@@ -256,7 +256,7 @@
       "text" = NA,
       "waterlines" = NA
     ),
-  "bw_black" = list(
+    "bw_black" = list(
       "background" = "#000000",
       "water" = "#ffffff",
       "landuse" = NA,
