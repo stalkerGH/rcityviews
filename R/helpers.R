@@ -523,6 +523,11 @@
       "family" = "Fredericka the Great",
       "face" = "plain",
       "scale" = 0
+    ),
+    "sepia1" = list(
+      "family" = "Fredericka the Great",
+      "face" = "plain",
+      "scale" = 0
     )
   )
   size <- list()
