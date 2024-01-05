@@ -17,7 +17,7 @@
   label <- NULL
    if (verbose) {
 #    # Initialize progress bar ##################################################
-     progBar <- progress::progress_bar$new(format = "", total = ticks, clear = FALSE, show_after = 0)
+#     progBar <- progress::progress_bar$new(format = "", total = ticks, clear = FALSE, show_after = 0)
 #      progBar$tick(0)
      message(paste0("Retrieving \u00A9 OpenStreetMap features for ", city[["name"]], ", ", city[["country"]]))
   }
