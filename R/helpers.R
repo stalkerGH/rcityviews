@@ -267,16 +267,27 @@
       "text" = NA,
       "waterlines" = NA
     ),
-      "wb" = list(
-      "background" = "#ffffff",
-      "water" = "#232323",
-      "landuse" = NA,
-      "contours" = NA,
-      "streets" = "#232323",
-      "rails" = c("#f0f0f0", "#000000"),
-      "buildings" = NA,
-      "text" = NA,
-      "waterlines" = NA
+    "wb" = list(
+    "background" = "#ffffff",
+    "water" = "#232323",
+    "landuse" = NA,
+    "contours" = NA,
+    "streets" = "#232323",
+    "rails" = c("#f0f0f0", "#000000"),
+    "buildings" = NA,
+    "text" = NA,
+    "waterlines" = NA
+    ),
+    "wb_blue" = list(
+    "background" = "#ffffff",
+    "water" = "#a2e6ff",
+    "landuse" = NA,
+    "contours" = NA,
+    "streets" = "#232323",
+    "rails" = c("#f0f0f0", "#000000"),
+    "buildings" = NA,
+    "text" = NA,
+    "waterlines" = "#a2e6ff"
     ),
     "wb_black" = list(
       "background" = "#ffffff",
@@ -493,6 +504,11 @@
       "scale" = 0
     ),
     "prism2" = list(
+      "family" = "Fredericka the Great",
+      "face" = "plain",
+      "scale" = 0
+    ),
+    "wb_blue" = list(
       "family" = "Fredericka the Great",
       "face" = "plain",
       "scale" = 0
