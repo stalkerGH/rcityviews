@@ -300,6 +300,17 @@
       "text" = NA,
       "waterlines" = NA
     ),
+    "sepia1" = list(
+      "background" = "#f8edeb",
+      "water" = "#FEC89A",
+      "landuse" = NA,
+      "contours" = NA,
+      "streets" = "#F9DCC4",
+      "rails" = c("#F8EDEB", "#FCD5CE"),
+      "buildings" = NA,
+      "text" = NA,
+      "waterlines" = "#FEC89A"
+    ),
     "blond1" = list(
       "background" = "#babbbd",
       "water" = "#4b9475",
