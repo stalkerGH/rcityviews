@@ -21,7 +21,7 @@
 #      progBar$tick(0)
      message(paste0("Retrieving \u00A9 OpenStreetMap features for ", city[["name"]], ", ", city[["country"]]))
   }
-  message(white("Krok 0 - inicjalizacja paska postępu"))
+#   message(white("Krok 0 - inicjalizacja paska postępu"))
   # Scale the streets with the zoom
   themeOptions[["size"]][["streets"]] <- lapply(themeOptions[["size"]][["streets"]], FUN = "*", zoom)
   themeOptions[["size"]][["borders"]] <- lapply(themeOptions[["size"]][["borders"]], FUN = "*", zoom)
@@ -499,15 +499,6 @@
     lineend = "round",
     inherit.aes = FALSE
   )
-  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"junction\"=\"roundabout\"")
-  message(white("Pobieram dane dla junction = roundabout"))
-  int_p <- int_p + ggplot2::geom_sf(
-    data = obj[["lines"]],
-    color = themeOptions[["colors"]][["streets"]],
-    linewidth = themeOptions[["size"]][["streets"]][["residential"]],
-    lineend = "round",
-    inherit.aes = FALSE
-  )  
   # Medium streets #############################################################
   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"highway\"=\"tertiary_link\"")
   message(white("Pobieram dane dla highway = tertiary_link"))
