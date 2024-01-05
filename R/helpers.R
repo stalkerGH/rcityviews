@@ -279,12 +279,12 @@
       "waterlines" = NA
     ),
     "wb_blue" = list(
-      "background" = "#CAF0F8",
+      "background" = "#eef6f8",
       "water" = "#02306a",
       "landuse" = NA,
       "contours" = NA,
       "streets" = "#5b8e98",
-      "rails" = c("#CAF0F8", "#01022b"),
+      "rails" = c("#eef6f8", "#01022b"),
       "buildings" = NA,
       "text" = NA,
       "waterlines" = "#02306a"
