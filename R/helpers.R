@@ -235,15 +235,15 @@
       "waterlines" = "#123F5A"
     ),
     "grey" = list(
-      "background" = "#232323",
-      "water" = "#ffffff",
+      "background" = "#f2f2f2",
+      "water" = "#cccccc",
       "landuse" = NA,
       "contours" = NA,
-      "streets" = "#b8b8b8",
-      "rails" = c("#808080", "#d6d6d6"),
+      "streets" = "#595959",
+      "rails" = c("#7f7f7f", "#f2f2f2"),
       "buildings" = NA,
       "text" = NA,
-      "waterlines" = NA
+      "waterlines" = "#cccccc"
     ),
     "bw" = list(
       "background" = "#232323",
@@ -572,7 +572,7 @@
     "secondary" = 3,
     "primary" = 4,
     "motorway" = 5,
-    "rails" = 4,
+    "rails" = 2.5,
     "runway" = 3
   )
   themeOptions <- list(
