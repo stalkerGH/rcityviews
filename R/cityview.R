@@ -185,7 +185,7 @@
 
 cityview <- function(name = NULL,
                      zoom = 1,
-                     theme = c("vintage", "modern", "bright", "delftware", "comic", "rouge", "original", "midearth", "batik", "vice", "grey", "bw", "wb", "bw_black", "wb_black", "wb_blue", "wb_alpha", "blond1", "blond2", "blond3", "peach", "auburn", "minimal_green", "minimal_green_invert", "blues", "darkmint", "prism", "prism2", "sepia1"),
+                     theme = c("vintage", "modern", "bright", "delftware", "comic", "rouge", "original", "midearth", "batik", "vice", "grey", "grey_blue", "bw", "wb", "bw_black", "wb_black", "wb_blue", "wb_alpha", "blond1", "blond2", "blond3", "peach", "auburn", "minimal_green", "minimal_green_invert", "blues", "darkmint", "prism", "prism2", "sepia1"),
                      border = c("none", "circle", "rhombus", "square", "hexagon", "octagon", "decagon", "bbox", "rectangle_horiz", "rectangle_vert"),
                      halftone = NULL,
                      legend = FALSE,
