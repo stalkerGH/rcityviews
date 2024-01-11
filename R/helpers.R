@@ -256,6 +256,17 @@
       "text" = NA,
       "waterlines" = "#199ee5"
     ),
+    "grey_blue2" = list(
+      "background" = "#f2f2f2",
+      "water" = "#bed7e5",
+      "landuse" = NA,
+      "contours" = NA,
+      "streets" = "#595959",
+      "rails" = c("#7f7f7f", "#f2f2f2"),
+      "buildings" = NA,
+      "text" = NA,
+      "waterlines" = "#bed7e5"
+    ),
     "bw" = list(
       "background" = "#232323",
       "water" = "#ffffff",
@@ -472,6 +483,11 @@
       "scale" = 0
     ),
     "grey_blue" = list(
+      "family" = "Rage",
+      "face" = "bold",
+      "scale" = 0
+    ),
+    "grey_blue2" = list(
       "family" = "Rage",
       "face" = "bold",
       "scale" = 0
