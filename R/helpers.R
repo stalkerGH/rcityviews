@@ -301,6 +301,28 @@
       "waterlines" = NA
     ),
     "wb_blue" = list(
+      "background" = "#ffffff",
+      "water" = "#199ee5",
+      "landuse" = NA,
+      "contours" = NA,
+      "streets" = "#323232",
+      "rails" = c("#f0f0f0", "#323232"),
+      "buildings" = NA,
+      "text" = NA,
+      "waterlines" = "#199ee5"
+    ),
+    "wb_blue2" = list(
+      "background" = "#ffffff",
+      "water" = "#bed7e5",
+      "landuse" = NA,
+      "contours" = NA,
+      "streets" = "#323232",
+      "rails" = c("#f0f0f0", "#323232"),
+      "buildings" = NA,
+      "text" = NA,
+      "waterlines" = "#bed7e5"
+    ),
+    "wb_blue3" = list(
       "background" = "#eef6f8",
       "water" = "#02306a",
       "landuse" = NA,
@@ -563,6 +585,16 @@
       "scale" = 0
     ),
     "wb_blue" = list(
+      "family" = "Fredericka the Great",
+      "face" = "plain",
+      "scale" = 0
+    ),
+    "wb_blue2" = list(
+      "family" = "Fredericka the Great",
+      "face" = "plain",
+      "scale" = 0
+    ),
+    "wb_blue3" = list(
       "family" = "Fredericka the Great",
       "face" = "plain",
       "scale" = 0
