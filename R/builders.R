@@ -80,33 +80,33 @@
 
 # Wyłączone, niepotrzebne do generowania mapy
   # Landuse ####################################################################
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"leisure\"=\"park\"")
-#   message(white("Pobieram dane dla leisure = park"))
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["polygons"]],
-#     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
-#     color = themeOptions[["colors"]][["contours"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-#     inherit.aes = FALSE
-#   )
-# #   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"landuse\"=\"forest\"")
-#   message(white("Pobieram dane dla landuse = forest"))
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["polygons"]],
-#     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
-#     color = themeOptions[["colors"]][["contours"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-#     inherit.aes = FALSE
-#   )
-# #   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"wood\"")
-#   message(white("Pobieram dane dla natural = wood"))
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["polygons"]],
-#     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
-#     color = themeOptions[["colors"]][["contours"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-#     inherit.aes = FALSE
-#   )
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"leisure\"=\"park\"")
+  message(white("Pobieram dane dla leisure = park"))
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["polygons"]],
+    fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
+    color = themeOptions[["colors"]][["contours"]],
+    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+    inherit.aes = FALSE
+  )
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"landuse\"=\"forest\"")
+  message(white("Pobieram dane dla landuse = forest"))
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["polygons"]],
+    fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
+    color = themeOptions[["colors"]][["contours"]],
+    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+    inherit.aes = FALSE
+  )
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"natural\"=\"wood\"")
+  message(white("Pobieram dane dla natural = wood"))
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["polygons"]],
+    fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
+    color = themeOptions[["colors"]][["contours"]],
+    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+    inherit.aes = FALSE
+  )
 # #   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"landuse\"=\"grass\"")
 #   message(white("Pobieram dane dla landuse = grass"))
 #   int_p <- int_p + ggplot2::geom_sf(
@@ -152,15 +152,15 @@
 #     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
 #     inherit.aes = FALSE
 #   )
-# #   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"landuse\"=\"farmland\"")
-#   message(white("Pobieram dane dla landuse = farmland"))
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["polygons"]],
-#     fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
-#     color = themeOptions[["colors"]][["contours"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-#     inherit.aes = FALSE
-#   )
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"landuse\"=\"farmland\"")
+  message(white("Pobieram dane dla landuse = farmland"))
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["polygons"]],
+    fill = sample(themeOptions[["colors"]][["landuse"]], size = length(obj[["polygons"]]), replace = TRUE),
+    color = themeOptions[["colors"]][["contours"]],
+    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+    inherit.aes = FALSE
+  )
 # #   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"landuse\"=\"cemetery\"")
 #   message(white("Pobieram dane dla landuse = cemetery"))
 #   int_p <- int_p + ggplot2::geom_sf(
