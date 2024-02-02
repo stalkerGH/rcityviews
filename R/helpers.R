@@ -92,7 +92,7 @@
     "prism2" = list(
       "background" = NA,
       "water" = "#2589c2",
-      "landuse" = "76C16A",
+      "landuse" = "#76C16A",
       "contours" = "#1d1d1d",
       "streets" = "#FF8700",
       "rails" = c("#ED3F29", "#b02d1e"),
@@ -213,7 +213,7 @@
     "wb_blue3" = list(
       "background" = "#ffffff",
       "water" = "#bed7e5",
-      "landuse" = "#deffdf",
+      "landuse" = "#f0fff0",
       "contours" = NA,
       "streets" = "#323232",
       "rails" = c("#f0f0f0", "#323232"),
