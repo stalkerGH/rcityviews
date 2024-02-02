@@ -75,130 +75,7 @@
 .themeOptions <- function(theme) {
   colors <- switch(theme,
   
-# Kolory z oryginalnego pakietu  
-    "vintage" = list(
-      "background" = "#fff7d8",
-      "water" = "#9ebfaa",
-      "landuse" = "#fff7d8",
-      "contours" = "#32130f",
-      "streets" = "#32130f",
-      "rails" = c("#32130f", "#fff7d8"),
-      "buildings" = c("#facc87", "#f39848", "#f8c98c", "#f58762"),
-      "text" = NA,
-      "waterlines" = "#9ebfaa"
-    ),
-    "modern" = list(
-      "background" = "#e6ddd6",
-      "water" = "#656c7c",
-      "landuse" = "#7c9c6b",
-      "contours" = "#e6ddd6",
-      "streets" = "#fafafa",
-      "rails" = c("#fafafa", "#e6ddd6"),
-      "buildings" = "#eb3e20",
-      "text" = NA,
-      "waterlines" = "#656c7c"
-    ),
-    "bright" = list(
-      "background" = "#eeefc9",
-      "water" = "#9ddffb",
-      "landuse" = c("#f2f4cb", "#d0f1bf", "#64b96a"),
-      "contours" = "#eeefc9",
-      "streets" = "#2f3737",
-      "rails" = c("#2f3737", "#eeefc9"),
-      "buildings" = c("#8e76a4", "#a193b1", "#db9b33", "#e8c51e", "#ed6c2e"),
-      "text" = NA,
-      "waterlines" = "#9ddffb"
-    ),
-    "delftware" = list(
-      "background" = "#fafafa",
-      "water" = "#fafafa",
-      "landuse" = c("#7ebaee", "#8da8d7", "#3259a6", "#0c133f", "#080e1c"),
-      "contours" = "#fafafa",
-      "streets" = "#1F305E",
-      "rails" = c("#1F305E", "#fafafa"),
-      "buildings" = c("#7ebaee", "#8da8d7", "#3259a6", "#0c133f", "#080e1c"),
-      "text" = NA,
-      "waterlines" = "#fafafa"
-    ),
-    "comic" = list(
-      "background" = "#ffffff",
-      "water" = "#607ba4",
-      "landuse" = "#4b9475",
-      "contours" = "#222222",
-      "streets" = "#222222",
-      "rails" = c("#222222", "#ffffff"),
-      "buildings" = c("#f4d749", "#daa520", "#a63c44"),
-      "text" = NA,
-      "waterlines" = "#607ba4"
-    ),
-    "rouge" = list(
-      "background" = "#a25543",
-      "water" = "#f2deb8",
-      "landuse" = "#a25543",
-      "contours" = "#f2deb8",
-      "streets" = "#f2deb8",
-      "rails" = c("#f2deb8", "#a25543"),
-      "buildings" = "#f2deb8",
-      "text" = NA,
-      "waterlines" = "#f2deb8"
-    ),
-    "original" = list(
-      "background" = "#fdf9f5",
-      "water" = "#fdf9f5",
-      "landuse" = "#fdf9f5",
-      "contours" = "#32130f",
-      "streets" = "#32130f",
-      "rails" = "#32130f",
-      "buildings" = "#fdf9f5",
-      "text" = NA,
-      "waterlines" = "#32130f"
-    ),
-    "midearth" = list(
-      "background" = "#b8a580",
-      "water" = "#c3c9b6",
-      "landuse" = "#b8a580",
-      "contours" = "#53402a",
-      "streets" = "#221c18",
-      "rails" = "#221c18",
-      "buildings" = "#53402a",
-      "text" = NA,
-      "waterlines" = "#c3c9b6",
-      "textshadow" = NA
-    ),
-    "batik" = list(
-      "background" = "#161417",
-      "water" = "#214040",
-      "landuse" = c("#ece3d9", "#9e5426", "#5d473c", "#C0b28a"),
-      "contours" = "#1d1d23",
-      "streets" = "#d7c5b8",
-      "rails" = "#d7c5b8",
-      "buildings" = c("#ece3d9", "#9e5426", "#5d473c", "#c0b28a"),
-      "text" = NA,
-      "waterlines" = "#214040"
-    ),
-    "vice" = list(
-      "background" = "#ffffff",
-      "water" = "#a3bff4",
-      "landuse" = "#6ece92",
-      "contours" = "#000000",
-      "streets" = "#e282af",
-      "rails" = "#e282af",
-      "buildings" = "#fff01f",
-      "text" = NA,
-      "waterlines" = "#a3bff4",
-      "textshadow" = "#e282af"
-    ),
-    "auburn" = list(
-      "background" = "#FFFFFF",
-      "water" = "#a8e1e6",
-      "landuse" = "#8BB174",
-      "contours" = "#32130f",
-      "streets" = "#2F3737",
-      "rails" = c("#F2F4CB", "#FFFFFF"),
-      "buildings" = c("#433633", "#FF5E5B", "#FF5E5B"),
-      "text" = "#343b47",
-      "waterlines" = "#a8e1e6"
-    ),
+# Kolory z oryginalnego pakietu usunięte
     
 # Kolory dodane przeze mnie
     "prism" = list(
@@ -431,17 +308,6 @@
       "text" = "#32130f",
       "waterlines" = "#169873"
     ),
-    "peach" = list(
-      "background" = "#F9EFDC",
-      "water" = "#a1e3ff",
-      "landuse" = "#64B96A",
-      "contours" = "#32130f",
-      "streets" = "#2F3737",
-      "rails" = c("#F2F4CB", "#F9EFDC"),
-      "buildings" = c("#FFC857", "#E9724C","#C5283D"),
-      "text" = "#343b47",
-      "waterlines" = "#85c9e6"
-    ),
     "minimal_green" = list(
       "background" = "#FFFFFF",
       "water" = "#169873",
@@ -466,61 +332,6 @@
     )
   )
   font <- switch(theme,
-    "vintage" = list(
-      "family" = "Fredericka the Great",
-      "face" = "plain",
-      "scale" = 0
-    ),
-    "modern" = list(
-      "family" = "Imbue",
-      "face" = "plain",
-      "scale" = 0
-    ),
-    "bright" = list(
-      "family" = "Damion",
-      "face" = "plain",
-      "scale" = 0
-    ),
-    "delftware" = list(
-      "family" = "Dancing Script",
-      "face" = "bold",
-      "scale" = 0
-    ),
-    "comic" = list(
-      "family" = "Rampart One",
-      "face" = "plain",
-      "scale" = 0
-    ),
-    "rouge" = list(
-      "family" = "Oswald",
-      "face" = "bold",
-      "scale" = 0
-    ),
-    "blues" = list(
-      "family" = "Oswald",
-      "face" = "bold",
-      "scale" = 0
-    ),
-    "original" = list(
-      "family" = "Caveat",
-      "face" = "bold",
-      "scale" = 0
-    ),
-    "midearth" = list(
-      "family" = "American Uncial Regular",
-      "face" = "plain",
-      "scale" = 0
-    ),
-    "batik" = list(
-      "family" = "Walter Turncoat",
-      "face" = "plain",
-      "scale" = 0
-    ),
-    "vice" = list(
-      "family" = "Rage",
-      "face" = "bold",
-      "scale" = 0
-    ),
     "grey" = list(
       "family" = "Rage",
       "face" = "bold",
@@ -572,16 +383,6 @@
       "scale" = 0
     ),
     "blond3" = list(
-      "family" = "Fredericka the Great",
-      "face" = "plain",
-      "scale" = 0
-    ),
-    "peach" = list(
-      "family" = "Fredericka the Great",
-      "face" = "plain",
-      "scale" = 0
-    ),
-    "auburn" = list(
       "family" = "Fredericka the Great",
       "face" = "plain",
       "scale" = 0
