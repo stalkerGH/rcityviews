@@ -263,15 +263,15 @@
 #   )
 #
 #  # Buildings ##################################################################
-#   obj <- .getOsmFeatures(bbox, cropped, border, features = "\"building\"")
-#   message(white("Pobieram dane dla buildings"))
-#   int_p <- int_p + ggplot2::geom_sf(
-#     data = obj[["polygons"]],
-#     fill = sample(themeOptions[["colors"]][["buildings"]], size = length(obj[["polygons"]]), replace = TRUE),
-#     color = themeOptions[["colors"]][["contours"]],
-#     linewidth = themeOptions[["size"]][["borders"]][["contours"]],
-#     inherit.aes = FALSE
-#   )
+  obj <- .getOsmFeatures(bbox, cropped, border, features = "\"building\"=\"church\"")
+  message(white("Pobieram dane dla buildings"))
+  int_p <- int_p + ggplot2::geom_sf(
+    data = obj[["polygons"]],
+    fill = sample(themeOptions[["colors"]][["buildings"]], size = length(obj[["polygons"]]), replace = TRUE),
+    color = themeOptions[["colors"]][["contours"]],
+    linewidth = themeOptions[["size"]][["borders"]][["contours"]],
+    inherit.aes = FALSE
+  )
 
 #   # Water ######################################################################
 #   message(white("Pobieram dane dla preWATERWAY = RIVER")

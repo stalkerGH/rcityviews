@@ -195,7 +195,7 @@
       "contours" = NA,
       "streets" = "#323232",
       "rails" = c("#f0f0f0", "#323232"),
-      "buildings" = NA,
+      "buildings" = "#9d3939",
       "text" = NA,
       "waterlines" = "#199ee5"
     ),
@@ -206,7 +206,7 @@
       "contours" = NA,
       "streets" = "#323232",
       "rails" = c("#f0f0f0", "#323232"),
-      "buildings" = NA,
+      "buildings" = "#9d3939",
       "text" = NA,
       "waterlines" = "#bed7e5"
     ),
@@ -217,7 +217,7 @@
       "contours" = NA,
       "streets" = "#323232",
       "rails" = c("#f0f0f0", "#323232"),
-      "buildings" = NA,
+      "buildings" = "#9d3939",
       "text" = NA,
       "waterlines" = "#bed7e5"
     ),
